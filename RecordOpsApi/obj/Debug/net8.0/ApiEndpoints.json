@@ -11,6 +11,11 @@
         "Name": "customer",
         "Type": "RecordOpsApi.Models.MCustomer",
         "IsRequired": true
+      },
+      {
+        "Name": "image",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -69,6 +74,16 @@
         "Name": "customer",
         "Type": "RecordOpsApi.Models.MCustomer",
         "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "image",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

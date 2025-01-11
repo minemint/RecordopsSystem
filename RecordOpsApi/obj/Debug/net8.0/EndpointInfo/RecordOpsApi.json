@@ -47,17 +47,7 @@
         ],
         "requestBody": {
           "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/MCustomer"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/MCustomer"
-              }
-            },
-            "application/*+json": {
+            "multipart/form-data": {
               "schema": {
                 "$ref": "#/components/schemas/MCustomer"
               }
@@ -76,19 +66,19 @@
         "tags": [
           "Customer"
         ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
         "requestBody": {
           "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/MCustomer"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/MCustomer"
-              }
-            },
-            "application/*+json": {
+            "multipart/form-data": {
               "schema": {
                 "$ref": "#/components/schemas/MCustomer"
               }
@@ -172,7 +162,8 @@
         "properties": {
           "customerId": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "customerTitleName": {
             "type": "string",
@@ -191,8 +182,7 @@
             "nullable": true
           },
           "customerProvince": {
-            "type": "integer",
-            "format": "int32",
+            "type": "string",
             "nullable": true
           },
           "districtId": {
@@ -206,14 +196,56 @@
             "nullable": true
           },
           "customerPostalCode": {
-            "type": "string",
+            "type": "integer",
+            "format": "int32",
             "nullable": true
           },
           "customerPhone": {
-            "type": "string",
+            "type": "integer",
+            "format": "int32",
             "nullable": true
           },
           "customerImage": {
+            "type": "string",
+            "nullable": true
+          },
+          "district": {
+            "$ref": "#/components/schemas/MDistrict"
+          }
+        },
+        "additionalProperties": false
+      },
+      "MDistrict": {
+        "type": "object",
+        "properties": {
+          "districtId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "districtName": {
+            "type": "string",
+            "nullable": true
+          },
+          "subdistricts": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MSubdistrict"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MSubdistrict": {
+        "type": "object",
+        "properties": {
+          "subdistrictId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "subdistrictName": {
             "type": "string",
             "nullable": true
           }

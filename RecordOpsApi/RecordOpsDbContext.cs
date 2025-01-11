@@ -19,13 +19,15 @@ namespace RecordOpsApi
             modelBuilder.Entity<MDistrict>().HasKey(x => x.districtId);
             modelBuilder.Entity<MSubdistrict>().HasKey(x => x.subdistrictId);
 
-            // กำหนดความสัมพันธ์ (One-to-Many)
-            modelBuilder.Entity<MSubdistrict>()
-                .HasOne(sub => sub.District) // ตำบลมีอำเภอเดียว
-                .WithMany(dist => dist.Subdistricts) // อำเภอมีหลายตำบล
-                .HasForeignKey(sub => sub.districtId) // Foreign Key คือ districtId
-                .OnDelete(DeleteBehavior.Cascade); // ถ้าลบอำเภอ ตำบลจะถูกลบไปด้วย
+            modelBuilder.Entity<MDistrict>()
+        .HasMany(d => d.Subdistricts)
+        .WithOne()
+        .HasForeignKey(s => s.subdistrictId);
+            
+                
+            
 
+            
             // Mapping ชื่อตาราง (Optional)
             modelBuilder.Entity<MCustomer>().ToTable("customer_tbl");
             modelBuilder.Entity<MDistrict>().ToTable("district_tbl");

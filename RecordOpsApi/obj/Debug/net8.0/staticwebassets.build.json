@@ -1,12 +1,20 @@
 {
   "Version": 1,
-  "Hash": "VZQXc2BbOiwzx2VkxlwY2awg1Gqa43ffeZSQCI1An6E=",
+  "Hash": "Mfc6hY2X5Nig5fNlqMW/sB0ZN//tDqfS2JLrglvTcNM=",
   "Source": "RecordOpsApi",
   "BasePath": "_content/RecordOpsApi",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "RecordOpsApi\\wwwroot",
+      "Source": "RecordOpsApi",
+      "ContentRoot": "C:\\Users\\pk505\\OneDrive\\เอกสาร\\GitHub\\RecordopsSystem\\RecordOpsApi\\wwwroot\\",
+      "BasePath": "_content/RecordOpsApi",
+      "Pattern": "**"
+    }
+  ],
   "Assets": [],
   "Endpoints": []
 }

@@ -7,6 +7,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Services\**" />
+    <Compile Remove="Sql\**" />
+    <Compile Remove="Upload\**" />
+    <Content Remove="Services\**" />
+    <Content Remove="Sql\**" />
+    <Content Remove="Upload\**" />
+    <EmbeddedResource Remove="Services\**" />
+    <EmbeddedResource Remove="Sql\**" />
+    <EmbeddedResource Remove="Upload\**" />
+    <None Remove="Services\**" />
+    <None Remove="Sql\**" />
+    <None Remove="Upload\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.2">
       <PrivateAssets>all</PrivateAssets>
@@ -18,9 +33,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Services\" />
-    <Folder Include="Sql\" />
-    <Folder Include="Upload\" />
+    <Folder Include="wwwroot\Images\" />
+    <Folder Include="wwwroot\" />
   </ItemGroup>
 
 </Project>

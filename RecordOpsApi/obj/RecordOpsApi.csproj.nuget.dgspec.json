@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\min\\Desktop\\RecordOpsSystem\\RecordOpsApi\\RecordOpsApi.csproj": {}
+    "C:\\Users\\pk505\\OneDrive\\เอกสาร\\GitHub\\RecordopsSystem\\RecordOpsApi\\RecordOpsApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\min\\Desktop\\RecordOpsSystem\\RecordOpsApi\\RecordOpsApi.csproj": {
+    "C:\\Users\\pk505\\OneDrive\\เอกสาร\\GitHub\\RecordopsSystem\\RecordOpsApi\\RecordOpsApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\min\\Desktop\\RecordOpsSystem\\RecordOpsApi\\RecordOpsApi.csproj",
+        "projectUniqueName": "C:\\Users\\pk505\\OneDrive\\เอกสาร\\GitHub\\RecordopsSystem\\RecordOpsApi\\RecordOpsApi.csproj",
         "projectName": "RecordOpsApi",
-        "projectPath": "C:\\Users\\min\\Desktop\\RecordOpsSystem\\RecordOpsApi\\RecordOpsApi.csproj",
-        "packagesPath": "C:\\Users\\min\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\min\\Desktop\\RecordOpsSystem\\RecordOpsApi\\obj\\",
+        "projectPath": "C:\\Users\\pk505\\OneDrive\\เอกสาร\\GitHub\\RecordopsSystem\\RecordOpsApi\\RecordOpsApi.csproj",
+        "packagesPath": "C:\\Users\\pk505\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pk505\\OneDrive\\เอกสาร\\GitHub\\RecordopsSystem\\RecordOpsApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\min\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pk505\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -43,7 +43,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         },
         "SdkAnalysisLevel": "9.0.100"
       },
@@ -93,7 +93,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -6,8 +6,8 @@ namespace RecordOpsApi.Repositories.Interfaces
     {
         Task<IEnumerable<MCustomer>> GetCustomers();
         Task<MCustomer> GetCustomer(int id);
-        Task<MCustomer> AddCustomer(MCustomer customer);
-        Task<MCustomer> UpdateCustomer(MCustomer customer);
+        Task<MCustomer> AddCustomer(MCustomer customer,IFormFile? image);
+        Task<MCustomer> UpdateCustomer(MCustomer customer, int id,IFormFile? image);
         void DeleteCustomer(int id);
     }
 }

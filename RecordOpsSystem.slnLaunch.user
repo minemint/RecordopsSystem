@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "RecordOpsApi\\RecordOpsApi.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "RecordOps\\RecordOps.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

@@ -14,9 +14,10 @@ namespace RecordOpsApi.Controllers
         private readonly ICustomerRepository _customerRepository;
 
 
-        public CustomerController(ICustomerRepository customerRepository, IMemoryCache memoryCache)
+        public CustomerController(ICustomerRepository customerRepository)
         {
             _customerRepository = customerRepository;
+
         }
 
         [HttpGet]
@@ -24,6 +25,10 @@ namespace RecordOpsApi.Controllers
         public async Task<IActionResult> GetCustomers()
         {
             var customers = await _customerRepository.GetCustomers();
+            if (customers == null)
+            {
+                return NotFound();
+            }
             return Ok(customers);
         }
 
@@ -32,7 +37,7 @@ namespace RecordOpsApi.Controllers
         public async Task<IActionResult> GetCustomer(int id)
         {   
          
-            var customer = _customerRepository.GetCustomer(id);
+            var customer =  await _customerRepository.GetCustomer(id);
             if (customer == null)
             {
                 return NotFound();
@@ -42,18 +47,19 @@ namespace RecordOpsApi.Controllers
 
         [HttpPost]
         [Route("AddCustomer")]
-        public async Task<IActionResult> AddCustomer([FromBody] MCustomer customer)
+        public async Task<IActionResult> AddCustomer([FromBody] MCustomer customer , IFormFile? image)
         {
-            var newCustomer = await _customerRepository.AddCustomer(customer);
+            var newCustomer = await _customerRepository.AddCustomer(customer,image);
            
             return Ok(newCustomer);
         }
 
         [HttpPut]
         [Route("UpdateCustomer")]
-        public async Task<IActionResult> UpdateCustomer([FromBody] MCustomer customer)
+        public async Task<IActionResult> UpdateCustomer([FromBody] MCustomer customer , int id, IFormFile? image)
         {
-            var updatedCustomer = await _customerRepository.UpdateCustomer(customer);
+            var updatedCustomer = await _customerRepository.UpdateCustomer(customer, id,image);
+
             return Ok(updatedCustomer);
         }
 

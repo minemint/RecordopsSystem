@@ -20,6 +20,21 @@ if (string.IsNullOrEmpty(connectionString))
 builder.Services.AddDbContext<RecordOpsDbContext>(options =>
     options.UseMySQL(connectionString));
 builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("MultipleOrigins",
+    policy =>
+    {
+        policy.WithOrigins(
+            "*"
+        )
+        .SetIsOriginAllowedToAllowWildcardSubdomains()
+        .AllowAnyMethod()
+        .AllowAnyHeader();
+
+    });
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

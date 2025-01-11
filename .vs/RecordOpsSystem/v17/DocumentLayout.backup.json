@@ -1,0 +1,174 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\pk505\\OneDrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\GitHub\\RecordopsSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{13C35CF9-1985-4319-821F-F42B97950B6D}|RecordOps\\RecordOps.csproj|c:\\users\\pk505\\onedrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\github\\recordopssystem\\recordops\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13C35CF9-1985-4319-821F-F42B97950B6D}|RecordOps\\RecordOps.csproj|solutionrelative:recordops\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6414C423-CE23-4285-91B9-0DC7B2CD2B6E}|RecordOpsApi\\RecordOpsApi.csproj|c:\\users\\pk505\\onedrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\github\\recordopssystem\\recordopsapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6414C423-CE23-4285-91B9-0DC7B2CD2B6E}|RecordOpsApi\\RecordOpsApi.csproj|solutionrelative:recordopsapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13C35CF9-1985-4319-821F-F42B97950B6D}|RecordOps\\RecordOps.csproj|c:\\users\\pk505\\onedrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\github\\recordopssystem\\recordops\\models\\customermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13C35CF9-1985-4319-821F-F42B97950B6D}|RecordOps\\RecordOps.csproj|solutionrelative:recordops\\models\\customermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13C35CF9-1985-4319-821F-F42B97950B6D}|RecordOps\\RecordOps.csproj|c:\\users\\pk505\\onedrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\github\\recordopssystem\\recordops\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{13C35CF9-1985-4319-821F-F42B97950B6D}|RecordOps\\RecordOps.csproj|solutionrelative:recordops\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 21,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1946958074:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:4:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:5:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:6:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:7:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:8:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:9:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:10:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:11:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:12:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:13:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\pk505\\OneDrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\GitHub\\RecordopsSystem\\RecordOpsApi\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "RecordOpsApi\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\pk505\\OneDrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\GitHub\\RecordopsSystem\\RecordOpsApi\\Properties\\launchSettings.json",
+              "RelativeToolTip": "RecordOpsApi\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-11T18:35:16.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CustomerModel.cs",
+              "DocumentMoniker": "C:\\Users\\pk505\\OneDrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\GitHub\\RecordopsSystem\\RecordOps\\Models\\CustomerModel.cs",
+              "RelativeDocumentMoniker": "RecordOps\\Models\\CustomerModel.cs",
+              "ToolTip": "C:\\Users\\pk505\\OneDrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\GitHub\\RecordopsSystem\\RecordOps\\Models\\CustomerModel.cs",
+              "RelativeToolTip": "RecordOps\\Models\\CustomerModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T18:33:33.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\pk505\\OneDrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\GitHub\\RecordopsSystem\\RecordOps\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "RecordOps\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\pk505\\OneDrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\GitHub\\RecordopsSystem\\RecordOps\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "RecordOps\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAcwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-11T18:31:38.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\pk505\\OneDrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\GitHub\\RecordopsSystem\\RecordOps\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "RecordOps\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\pk505\\OneDrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\GitHub\\RecordopsSystem\\RecordOps\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "RecordOps\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAuwBgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T18:23:46.163Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 429,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
