@@ -237,3 +237,5 @@ D:\Project\RecordopsSystem\RecordOps\bin\Debug\net8.0\System.Web.WebPages.Deploy
 D:\Project\RecordopsSystem\RecordOps\bin\Debug\net8.0\System.Web.WebPages.Razor.dll
 D:\Project\RecordopsSystem\RecordOps\bin\Debug\net8.0\System.Web.WebPages.dll
 D:\Project\RecordopsSystem\RecordOps\bin\Debug\net8.0\Microsoft.Web.Infrastructure.dll
+D:\Project\RecordopsSystem\RecordOps\bin\Debug\net8.0\xunit.abstractions.dll
+D:\Project\RecordopsSystem\RecordOps\bin\Debug\net8.0\xunit.core.dll

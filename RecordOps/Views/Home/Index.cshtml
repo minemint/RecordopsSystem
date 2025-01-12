@@ -1,95 +1,109 @@
 ﻿@model IEnumerable<RecordOps.ViewModels.CustomerViewModel>
-
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<div class="container p-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div class="search-container">
+           <div class="d-flex gap-2">
+                <input type="text" class="form-control" placeholder="Search table" style="width: 300px;">
+                <a class="btn btn-sm btn-outline-primary" asp-action="Create" style="width: 100px">Create </a>
+           </div>
+        </div>
+        <div class="controls">
+            <select class="form-select d-inline-block" style="width: 70px;">
+                <option>10</option>
+                <option>20</option>
+                <option>50</option>
+                <option>100</option>
+            </select>
+        </div>
+    </div>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.CustomerId)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CustomerTitleName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CustomerFName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CustomerLName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CustomerAddress)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CustomerProvince)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.District.districtName) 
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Subdistrict.subdistrictName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CustomerPostalCode)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CustomerPhone)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.customerImage)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.CustomerId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CustomerTitleName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CustomerFName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CustomerLName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CustomerAddress)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CustomerProvince)
-            </td>
-            <td>
-                    @Html.DisplayFor(modelItem => item.District.districtName)
-            </td>
-            <td>
-                    @Html.DisplayFor(modelItem => item.Subdistrict.subdistrictName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CustomerPostalCode)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CustomerPhone)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.customerImage)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.CustomerId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.CustomerId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.CustomerId">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+    <table class="table table-hover"> 
+        <thead class="bg-light">
+            <tr>
+                <th hidden>
+                    @Html.DisplayNameFor(model => model.CustomerId)
+                </th>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Address
+                </th>
+                <th>
+                    Phone
+                </th>
+                <th>
+                    Image
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td hidden>
+                        @Html.DisplayFor(modelItem => item.CustomerId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CustomerTitleName)
+                        @Html.DisplayFor(modelItem => item.CustomerFName)
+                        @Html.DisplayFor(modelItem => item.CustomerLName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CustomerAddress)
+                        @Html.DisplayFor(modelItem => item.CustomerProvince)
+                        @Html.DisplayFor(modelItem => item.District.districtName)
+                        @Html.DisplayFor(modelItem => item.Subdistrict.subdistrictName)
+                        @Html.DisplayFor(modelItem => item.CustomerPostalCode)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CustomerPhone)
+                    </td>
+                    <td>
+                        <img src="~/uploads/@Html.DisplayFor(modelItem => item.customerImage)" alt="Customer Image" width="120" height="120" />
+                    </td>
+                    <td>
+                        <div class="d-flex gap-2">
+                            <a asp-action="Edit" asp-route-id="@item.CustomerId" class="btn btn-sm btn-outline-primary">Edit</a>
+                            <a asp-action="Delete" asp-route-id="@item.CustomerId" class="btn btn-sm btn-outline-danger">Delete</a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<style>
+    .table th {
+        font-size: 0.85rem;
+        font-weight: 600;
+        border-bottom: 2px solid #e9ecef;
+    }
+
+    .table td {
+        vertical-align: middle;
+        padding: 1rem 0.75rem;
+    }
+
+    .search-container input {
+        padding: 0.5rem 1rem;
+        border: 1px solid #dee2e6;
+        border-radius: 4px;
+    }
+
+    .form-select {
+        padding: 0.5rem;
+        border: 1px solid #dee2e6;
+        border-radius: 4px;
+    }
+
+    .table tr:nth-child(even) {
+        background-color: rgba(232, 255, 251, 0.5);
+    }
+</style>

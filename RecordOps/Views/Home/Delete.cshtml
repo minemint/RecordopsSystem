@@ -1,0 +1,141 @@
+﻿@model RecordOps.ViewModels.CustomerViewModel
+@{
+    ViewData["Title"] = "Delete Customer";
+}
+
+<div class="container p-4">
+    <div class="card shadow-sm">
+        <div class="card-header bg-light d-flex justify-content-between align-items-center">
+            <h4 class="mb-0 text-danger">Delete Customer</h4>
+        </div>
+        <div class="card-body">
+            <div class="alert alert-danger">
+                <h5 class="alert-heading"><i class="bi bi-exclamation-triangle-fill me-2"></i>Confirmation Required</h5>
+                <p class="mb-0">Are you sure you want to delete this customer? This action cannot be undone.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-header bg-light">
+                            <h6 class="mb-0">Personal Information</h6>
+                        </div>
+                        <div class="card-body">
+                            <table class="table table-borderless">
+                                <tr>
+                                    <th style="width: 35%">ID</th>
+                                    <td>@Html.DisplayFor(model => model.CustomerId)</td>
+                                </tr>
+                                <tr>
+                                    <th>Title</th>
+                                    <td>@Html.DisplayFor(model => model.CustomerTitleName)</td>
+                                </tr>
+                                <tr>
+                                    <th>First Name</th>
+                                    <td>@Html.DisplayFor(model => model.CustomerFName)</td>
+                                </tr>
+                                <tr>
+                                    <th>Last Name</th>
+                                    <td>@Html.DisplayFor(model => model.CustomerLName)</td>
+                                </tr>
+                                <tr>
+                                    <th>Phone</th>
+                                    <td>@Html.DisplayFor(model => model.CustomerPhone)</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-header bg-light">
+                            <h6 class="mb-0">Address Details</h6>
+                        </div>
+                        <div class="card-body">
+                            <table class="table table-borderless">
+                                <tr>
+                                    <th style="width: 35%">Address</th>
+                                    <td>@Html.DisplayFor(model => model.CustomerAddress)</td>
+                                </tr>
+                                <tr>
+                                    <th>Province</th>
+                                    <td>@Html.DisplayFor(model => model.CustomerProvince)</td>
+                                </tr>
+                                <tr>
+                                    <th>District</th>
+                                    <td>@Html.DisplayFor(model => model.DistrictId)</td>
+                                </tr>
+                                <tr>
+                                    <th>Subdistrict</th>
+                                    <td>@Html.DisplayFor(model => model.SubdistrictId)</td>
+                                </tr>
+                                <tr>
+                                    <th>Postal Code</th>
+                                    <td>@Html.DisplayFor(model => model.CustomerPostalCode)</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Customer Image -->
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header bg-light">
+                            <h6 class="mb-0">Customer Image</h6>
+                        </div>
+                        <div class="card-body">
+                            <img src="~/uploads/@Model.customerImage" alt="Customer Image"
+                                 class="img-thumbnail" style="width: 120px; height: 120px; object-fit: cover;" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="mt-4 d-flex gap-2">
+                <form asp-action="Delete" class="d-inline">
+                    <button type="submit" class="btn btn-danger px-4">Confirm Delete</button>
+                    <a asp-action="Index" class="btn btn-outline-secondary">Cancel</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .card {
+        border: 1px solid rgba(0,0,0,0.08);
+        border-radius: 8px;
+    }
+
+    .card-header {
+        background-color: rgba(232, 255, 251, 0.5) !important;
+        border-bottom: 1px solid rgba(0,0,0,0.08);
+    }
+
+    .table th {
+        color: #4a5568;
+        font-weight: 500;
+    }
+
+    .alert-danger {
+        background-color: #fff5f5;
+        border-color: #fc8181;
+        color: #c53030;
+    }
+
+    .img-thumbnail {
+        border-radius: 8px;
+    }
+
+    .btn-danger {
+        background-color: #dc3545;
+        border-color: #dc3545;
+    }
+
+        .btn-danger:hover {
+            background-color: #c82333;
+            border-color: #bd2130;
+        }
+</style>

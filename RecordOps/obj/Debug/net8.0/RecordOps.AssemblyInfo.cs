@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RecordOps")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e94f0ae06d5a3f6bacd1bb2ecd950988fc3b7803")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e5ffe21f896a3612e085dd3c465034269a19879b")]
 [assembly: System.Reflection.AssemblyProductAttribute("RecordOps")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RecordOps")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -27,6 +27,7 @@ namespace RecordOpsApi.Repositories
                 customerFName = customer.customerFName,
                 customerLName = customer.customerLName,
                 customerAddress = customer.customerAddress,
+                customerProvince = customer.customerProvince,
                 customerPhone = customer.customerPhone,
                 customerImage = customer.customerImage,
                 districtId = customer.districtId,
@@ -66,36 +67,14 @@ namespace RecordOpsApi.Repositories
             oldcustomer.customerFName = customer.customerFName;
             oldcustomer.customerLName = customer.customerLName;
             oldcustomer.customerAddress = customer.customerAddress;
+            oldcustomer.customerProvince = customer.customerProvince;
             oldcustomer.customerPhone = customer.customerPhone;
             oldcustomer.districtId = customer.districtId;
             oldcustomer.subdistrictId = customer.subdistrictId;
             oldcustomer.customerPostalCode = customer.customerPostalCode;
+            oldcustomer.customerImage = customer.customerImage;
 
             _context.customer_tbl.Update(oldcustomer);
-
-            //if (image != null)
-            //{
-            //    string fileName = Guid.NewGuid().ToString() + Path.GetExtension(image.FileName);
-
-            //    string uploadFolder = Path.Combine("wwwroot", "Images");
-
-            //    if (!Directory.Exists(uploadFolder))
-            //    {
-            //        Directory.CreateDirectory(uploadFolder);
-            //    }
-
-            //    using (var fileStream = new FileStream(Path.Combine(uploadFolder, fileName), FileMode.Create))
-            //    {
-            //        await image.CopyToAsync(fileStream);
-            //    }
-
-            //    if (oldcustomer.customerImage != "noimg.jpg")
-            //    {
-            //        System.IO.File.Delete(Path.Combine(uploadFolder, oldcustomer.customerImage!));
-            //    }
-
-            //    oldcustomer.customerImage = fileName;
-            //}
 
             await _context.SaveChangesAsync();
             return oldcustomer;

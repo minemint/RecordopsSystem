@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Newtonsoft.Json;
 using RecordOps.Models;
@@ -15,17 +16,20 @@ namespace RecordOps.Controllers
         private readonly ILogger<HomeController> _logger;
         private readonly HttpClient _httpClient;
         Uri BaseAddress = new Uri("https://localhost:7066/api");
-        public HomeController(ILogger<HomeController> logger)
+        private readonly IWebHostEnvironment _hostingEnvironment;
+
+        public HomeController(ILogger<HomeController> logger, IWebHostEnvironment hostingEnvironment)
         {
             _logger = logger;
             _httpClient = new HttpClient();
             _httpClient.BaseAddress = BaseAddress;
+            _hostingEnvironment = hostingEnvironment;
 
         }
 
         public IActionResult Index()
         {
-            
+
             HttpResponseMessage response = _httpClient.GetAsync(_httpClient.BaseAddress + "/Customer/GetCustomers").Result;
             if (response.IsSuccessStatusCode)
             {
@@ -40,68 +44,96 @@ namespace RecordOps.Controllers
         // GET: HomeController1/Create
         public ActionResult Create()
         {
-            ViewBag.Districts = new SelectList(GetDistricts(), "DistrictId", "DistrictName");
-            ViewBag.Subdistricts = new SelectList(GetSubdistricts(), "SubdistrictId", "SubdistrictName");
-            var viewModel = new CreateViewModel
-            {
-                Districts = ViewBag.Districts,
-                Subdistricts = ViewBag.Subdistricts
+            return View();
 
-            };
-            return View(viewModel);
         }
 
-        private IEnumerable GetSubdistricts()
-        {
-            var subdistricts = new List<SubdistrictModel>
-            {
-                new SubdistrictModel { subdistrictId = 1, subdistrictName = "A 1" },
-                new SubdistrictModel { subdistrictId = 2, subdistrictName = "B 2" },
-                new SubdistrictModel { subdistrictId = 3, subdistrictName = "C 3" }
-            };
-            return subdistricts;
-        }
-
-        private IEnumerable GetDistricts()
-        {
-            var districts = new List<DistrictModel>
-            {
-                new DistrictModel { districtId = 1, districtName = "A" },
-                new DistrictModel { districtId = 2, districtName = "B" },
-                new DistrictModel { districtId = 3, districtName = "C" }
-            };
-            return districts;
-        }
 
         // POST: HomeController1/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create(CreateViewModel model)
+        public async Task<ActionResult> Create(CreateViewModel model, IFormFile? file)
         {
-            if (ModelState.IsValid)
+            string uploadfolder = Path.Combine(_hostingEnvironment.WebRootPath, "uploads");
+            if (!Directory.Exists(uploadfolder))
             {
-                var json = JsonConvert.SerializeObject(model);
-                var data = new StringContent(json, Encoding.UTF8, "application/json");
-                HttpResponseMessage response = await _httpClient.PostAsync(_httpClient.BaseAddress + "/Customer/AddCustomer", data);
-                if (response.IsSuccessStatusCode)
+                Directory.CreateDirectory(uploadfolder);
+            }
+            if (file == null || file.Length == 0)
+            {
+                string filename = "noimage.jpg";
+                var customer = new CustomerViewModel
                 {
-                    return RedirectToAction("Index");
+                    CustomerTitleName = model.CustomerTitleName,
+                    CustomerFName = model.CustomerFName,
+                    CustomerLName = model.CustomerLName,
+                    CustomerAddress = model.CustomerAddress,
+                    CustomerProvince = model.CustomerProvince,
+                    DistrictId = model.DistrictId,
+                    SubdistrictId = model.SubdistrictId,
+                    CustomerPostalCode = model.CustomerPostalCode,
+                    CustomerPhone = model.CustomerPhone.ToString(),
+                    customerImage = filename
+                };
+                if (ModelState.IsValid)
+                {
+                    var json = JsonConvert.SerializeObject(customer);
+                    var data = new StringContent(json, Encoding.UTF8, "application/json");
+                    HttpResponseMessage response = await _httpClient.PostAsync(_httpClient.BaseAddress + "/Customer/AddCustomer", data);
+                    if (response.IsSuccessStatusCode)
+                    {
+                        return RedirectToAction("Index");
+                    }
                 }
             }
+            else
+            {
+                string filename = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
+                string filepath = Path.Combine(uploadfolder, filename);
+                using (FileStream fs = new FileStream(filepath, FileMode.Create))
+                {
+                    file.CopyTo(fs);
+                    var customer = new CustomerViewModel
+                    {
+                        CustomerTitleName = model.CustomerTitleName,
+                        CustomerFName = model.CustomerFName,
+                        CustomerLName = model.CustomerLName,
+                        CustomerAddress = model.CustomerAddress,
+                        CustomerProvince = model.CustomerProvince,
+                        DistrictId = model.DistrictId,
+                        SubdistrictId = model.SubdistrictId,
+                        CustomerPostalCode = model.CustomerPostalCode,
+                        CustomerPhone = model.CustomerPhone.ToString(),
+                        customerImage = filename
+                    };
+
+                    if (ModelState.IsValid)
+                    {
+                        var json = JsonConvert.SerializeObject(customer);
+                        var data = new StringContent(json, Encoding.UTF8, "application/json");
+                        HttpResponseMessage response = await _httpClient.PostAsync(_httpClient.BaseAddress + "/Customer/AddCustomer", data);
+                        if (response.IsSuccessStatusCode)
+                        {
+                            return RedirectToAction("Index");
+                        }
+                    }
+
+                }
+            }
+
             return View(model);
         }
 
         // GET: HomeController1/Edit/5
         public ActionResult Edit(int id)
         {
+
             HttpResponseMessage response = _httpClient.GetAsync(_httpClient.BaseAddress + $"/Customer/GetCustomer/{id}").Result;
             if (response.IsSuccessStatusCode)
             {
-            var data = response.Content.ReadAsStringAsync().Result;
-            var customer = JsonConvert.DeserializeObject<EditViewModel>(data);
-            ViewBag.Districts = new SelectList(GetDistricts(), "DistrictId", "DistrictName", customer.DistrictId);
-            ViewBag.Subdistricts = new SelectList(GetSubdistricts(), "SubdistrictId", "SubdistrictName", customer.SubdistrictId);
-            return View(customer);
+                var data = response.Content.ReadAsStringAsync().Result;
+                var customer = JsonConvert.DeserializeObject<EditViewModel>(data);
+                return View(customer);
             }
             return RedirectToAction("Index");
         }
@@ -109,57 +141,98 @@ namespace RecordOps.Controllers
         // POST: HomeController1/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(int id, IFormCollection collection, IFormFile? file)
         {
-            // ตรวจสอบข้อมูลจากฟอร์ม
-            if (ModelState.IsValid)
+            string uploadfolder = Path.Combine(_hostingEnvironment.WebRootPath, "uploads");
+            if (file != null)
             {
-                try
+                string filename = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
+                string filepath = Path.Combine(uploadfolder, filename);
+                using (FileStream fs = new FileStream(filepath, FileMode.Create))
                 {
-                    // สร้าง EditViewModel จากข้อมูลที่รับมาใน form
-                    var customer = new EditViewModel
+                    file.CopyTo(fs);
+                    var customer = new CustomerViewModel
                     {
-                        CustomerId = Convert.ToInt32(collection["CustomerId"]), // รับข้อมูลชื่อ
-                        CustomerFName = collection["CustomerFName"], // รับข้อมูลชื่อ
-                        CustomerLName = collection["CustomerLName"], // รับข้อมูลนามสกุล
-                        CustomerAddress = collection["CustomerAddress"], // รับข้อมูลที่อยู่
-                        DistrictId = Convert.ToInt32(collection["DistrictId"]), // รับข้อมูลรหัสเขต
-                        SubdistrictId = Convert.ToInt32(collection["SubdistrictId"]), // รับข้อมูลรหัสตำบล
-                        CustomerPostalCode = collection["CustomerPostalCode"], // รับข้อมูลรหัสไปรษณีย์
-                        CustomerPhone = collection["CustomerPhone"] // รับข้อมูลเบอร์โทร
+                        CustomerId = Convert.ToInt32(collection["CustomerId"]),
+                        CustomerFName = collection["CustomerFName"],
+                        CustomerLName = collection["CustomerLName"],
+                        CustomerAddress = collection["CustomerAddress"],
+                        DistrictId = Convert.ToInt32(collection["DistrictId"]),
+                        SubdistrictId = Convert.ToInt32(collection["SubdistrictId"]),
+                        CustomerPostalCode = collection["CustomerPostalCode"],
+                        CustomerPhone = collection["CustomerPhone"],
+                        customerImage = filename
                     };
-
-                    // ส่งข้อมูลไปยัง API เพื่ออัปเดตลูกค้า มีid และข้อมูลลูกค้า
-                    var json = JsonConvert.SerializeObject(customer);
-                    var data = new StringContent(json, Encoding.UTF8, "application/json");
-                    HttpResponseMessage response = _httpClient.PutAsync(_httpClient.BaseAddress + $"/Customer/UpdateCustomer/{id}", data).Result;
-
-
-                    if (response.IsSuccessStatusCode)
+                    if (ModelState.IsValid)
                     {
-                        // หากการอัปเดตสำเร็จ ให้ redirect ไปที่หน้าหลัก (Index)
+                        var json = JsonConvert.SerializeObject(customer);
+                        var data = new StringContent(json, Encoding.UTF8, "application/json");
+                        System.Console.WriteLine(json);
+                        HttpResponseMessage response = _httpClient.PutAsync(_httpClient.BaseAddress + $"/Customer/UpdateCustomer/{id}", data).Result;
+                        if (response.IsSuccessStatusCode)
+                        {
+                            return RedirectToAction("Index");
+                        }
+                        else
+                        {
+                            ModelState.AddModelError("", "เกิดข้อผิดพลาดในการอัปเดตข้อมูล");
+                        }
+                    }
+                }
+
+            }
+            else
+            {
+                HttpResponseMessage response = _httpClient.GetAsync(_httpClient.BaseAddress + $"/Customer/GetCustomer/{id}").Result;
+                var data = response.Content.ReadAsStringAsync().Result;
+                var customer2 = JsonConvert.DeserializeObject<CustomerViewModel>(data);
+                var customer = new CustomerViewModel
+                {
+                    CustomerId = Convert.ToInt32(collection["CustomerId"]),
+                    CustomerTitleName = collection["CustomerTitleName"],
+                    CustomerFName = collection["CustomerFName"],
+                    CustomerLName = collection["CustomerLName"],
+                    CustomerAddress = collection["CustomerAddress"],
+                    DistrictId = Convert.ToInt32(collection["DistrictId"]),
+                    SubdistrictId = Convert.ToInt32(collection["SubdistrictId"]),
+                    CustomerProvince = collection["CustomerProvince"],
+                    CustomerPostalCode = (collection["CustomerPostalCode"]),
+                    CustomerPhone = collection["CustomerPhone"],
+                    customerImage = Convert.ToString(customer2.customerImage)
+                };
+
+
+                if (ModelState.IsValid)
+                {
+                    var json = JsonConvert.SerializeObject(customer);
+                    var data2 = new StringContent(json, Encoding.UTF8, "application/json");
+                    HttpResponseMessage response2 = _httpClient.PutAsync(_httpClient.BaseAddress + $"/Customer/UpdateCustomer/{id}", data2).Result;
+                    if (response2.IsSuccessStatusCode)
+                    {
                         return RedirectToAction("Index");
                     }
                     else
                     {
-                        // หากการอัปเดตล้มเหลว ให้แสดง error message หรือข้อผิดพลาด
                         ModelState.AddModelError("", "เกิดข้อผิดพลาดในการอัปเดตข้อมูล");
                     }
                 }
-                catch (Exception ex)
-                {
-                    // หากมีข้อผิดพลาด ให้แสดงข้อผิดพลาดใน ModelState
-                    ModelState.AddModelError("", $"เกิดข้อผิดพลาด: {ex.Message}");
-                }
             }
-
-            // หากข้อมูลไม่ถูกต้อง หรือการอัปเดตล้มเหลว ให้กลับไปที่ View และแสดงผลลัพธ์เดิม
             return View();
         }
+
+
+
 
         // GET: HomeController1/Delete/5
         public ActionResult Delete(int id)
         {
+            HttpResponseMessage response = _httpClient.GetAsync(_httpClient.BaseAddress + $"/Customer/GetCustomer/{id}").Result;
+            if (response.IsSuccessStatusCode)
+            {
+                var data = response.Content.ReadAsStringAsync().Result;
+                var customer = JsonConvert.DeserializeObject<CustomerViewModel>(data);
+                return View(customer);
+            }
             return View();
         }
 
@@ -168,14 +241,17 @@ namespace RecordOps.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id, IFormCollection collection)
         {
-            try
+            HttpResponseMessage response = _httpClient.DeleteAsync(_httpClient.BaseAddress + $"/Customer/DeleteCustomer/{id}").Result;
+
+            if (response.IsSuccessStatusCode)
             {
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Index");
             }
-            catch
+            else
             {
-                return View();
+                ModelState.AddModelError("", "เกิดข้อผิดพลาดในการลบข้อมูล");
             }
+            return View();
         }
 
 

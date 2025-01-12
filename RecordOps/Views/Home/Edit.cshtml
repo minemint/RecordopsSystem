@@ -1,73 +1,170 @@
 ﻿@model RecordOps.ViewModels.EditViewModel
-
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Edit Customer";
 }
 
-<h1>Edit</h1>
+<div class="container p-4">
+    <div class="card shadow-sm">
+        <div class="card-header bg-light">
+            <h4 class="mb-0">Edit Customer Information</h4>
+        </div>
+        <div class="card-body">
+            <form asp-action="Edit" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input asp-for="CustomerId" type="hidden" />
 
-<h4>EditViewModel</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div class="form-group">
-                <label asp-for="CustomerId" class="control-label"></label>
-                <input asp-for="CustomerId" class="form-control" />
-                <span asp-validation-for="CustomerId" class="text-danger"></span>
-            </div>
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="CustomerFName" class="control-label"></label>
-                <input asp-for="CustomerFName" class="form-control" />
-                <span asp-validation-for="CustomerFName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CustomerLName" class="control-label"></label>
-                <input asp-for="CustomerLName" class="form-control" />
-                <span asp-validation-for="CustomerLName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CustomerAddress" class="control-label"></label>
-                <input asp-for="CustomerAddress" class="form-control" />
-                <span asp-validation-for="CustomerAddress" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CustomerProvince" class="control-label"></label>
-                <input asp-for="CustomerProvince" class="form-control" />
-                <span asp-validation-for="CustomerProvince" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="DistrictId" class="control-label"></label>
-                <input asp-for="DistrictId" class="form-control" />
-                <span asp-validation-for="DistrictId" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="SubdistrictId" class="control-label"></label>
-                <input asp-for="SubdistrictId" class="form-control" />
-                <span asp-validation-for="SubdistrictId" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CustomerPostalCode" class="control-label"></label>
-                <input asp-for="CustomerPostalCode" class="form-control" />
-                <span asp-validation-for="CustomerPostalCode" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CustomerPhone" class="control-label"></label>
-                <input asp-for="CustomerPhone" class="form-control" />
-                <span asp-validation-for="CustomerPhone" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-header bg-light">
+                                <h6 class="mb-0">Personal Information</h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="mb-3" hidden>
+                                    <label asp-for="CustomerTitleName" class="form-label">CustomerTitleName</label>
+                                    <input asp-for="CustomerTitleName" class="form-control" placeholder="Enter first name" />
+                                    <span asp-validation-for="CustomerTitleName" class="text-danger"></span>
+                                </div>
+                                <div class="mb-3">
+                                    <label asp-for="CustomerFName" class="form-label">First Name</label>
+                                    <input asp-for="CustomerFName" class="form-control" placeholder="Enter first name" />
+                                    <span asp-validation-for="CustomerFName" class="text-danger"></span>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label asp-for="CustomerLName" class="form-label">Last Name</label>
+                                    <input asp-for="CustomerLName" class="form-control" placeholder="Enter last name" />
+                                    <span asp-validation-for="CustomerLName" class="text-danger"></span>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label asp-for="CustomerPhone" class="form-label">Phone Number</label>
+                                    <input asp-for="CustomerPhone" class="form-control" placeholder="Enter phone number" />
+                                    <span asp-validation-for="CustomerPhone" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-header bg-light">
+                                <h6 class="mb-0">Address Details</h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <label asp-for="CustomerAddress" class="form-label">Address</label>
+                                    <input asp-for="CustomerAddress" class="form-control" placeholder="Enter address" />
+                                    <span asp-validation-for="CustomerAddress" class="text-danger"></span>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label asp-for="CustomerProvince" class="form-label">Province</label>
+                                    <input asp-for="CustomerProvince" class="form-control" placeholder="Enter province" />
+                                    <span asp-validation-for="CustomerProvince" class="text-danger"></span>
+                                </div>
+
+                                <div class="mb-3" hidden>
+                                    <label asp-for="DistrictId" class="form-label">District</label>
+                                    <input asp-for="DistrictId" class="form-control" />
+                                    <select asp-for="DistrictId" asp-items="ViewBag.DistrictId" class="form-control"></select>
+                                    <span asp-validation-for="DistrictId" class="text-danger"></span>
+                                </div>
+
+                                <div class="mb-3" hidden>
+                                    <label asp-for="SubdistrictId" class="form-label">Subdistrict</label>
+                                    <input asp-for="SubdistrictId" class="form-control" />
+                                    <span asp-validation-for="SubdistrictId" class="text-danger"></span>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label asp-for="CustomerPostalCode" class="form-label">Postal Code</label>
+                                    <input asp-for="CustomerPostalCode" class="form-control" placeholder="Enter postal code" />
+                                    <span asp-validation-for="CustomerPostalCode" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Image Section -->
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header bg-light">
+                                <h6 class="mb-0">Profile Image</h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="row align-items-center">
+                                    <div class="col-md-3">
+                                        <div class="current-image mb-3">
+                                            <label class="form-label">Current Image</label>
+                                            <img src="~/uploads/@Model.customerImage" alt="Customer Image"
+                                                 class="img-thumbnail d-block" style="width: 120px; height: 120px; object-fit: cover;" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div class="mb-3">
+                                            <label asp-for="CustomerImage" class="form-label">Update Image</label>
+                                            <input type="file" asp-for="CustomerImage" name="file" class="form-control" />
+                                            <span asp-validation-for="CustomerImage" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4 d-flex gap-2">
+                    <button type="submit" class="btn btn-primary px-4">Save Changes</button>
+                    <a asp-action="Index" class="btn btn-outline-secondary">Back to List</a>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+<style>
+    .card {
+        border: 1px solid rgba(0,0,0,0.08);
+        border-radius: 8px;
+    }
+
+    .card-header {
+        background-color: rgba(232, 255, 251, 0.5) !important;
+        border-bottom: 1px solid rgba(0,0,0,0.08);
+    }
+
+    .form-control {
+        border: 1px solid #dee2e6;
+        padding: 0.5rem 0.75rem;
+        border-radius: 6px;
+    }
+
+        .form-control:focus {
+            border-color: #80bdff;
+            box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+        }
+
+    .btn-primary {
+        background-color: #00a8cc;
+        border-color: #00a8cc;
+    }
+
+        .btn-primary:hover {
+            background-color: #0097b8;
+            border-color: #0097b8;
+        }
+
+    .form-label {
+        font-weight: 500;
+        color: #4a5568;
+    }
+
+    .img-thumbnail {
+        border-radius: 8px;
+    }
+</style>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

@@ -245,6 +245,10 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\uploads\\ba74e89d-3a1e-41a8-9ba1-1b6bd2e21716.jpg",
+      "PackagePath": "staticwebassets\\uploads\\ba74e89d-3a1e-41a8-9ba1-1b6bd2e21716.jpg"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.RecordOps.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
