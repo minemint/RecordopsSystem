@@ -5,7 +5,7 @@ VisualStudioVersion = 17.12.35514.174
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordOpsApi", "RecordOpsApi\RecordOpsApi.csproj", "{6414C423-CE23-4285-91B9-0DC7B2CD2B6E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordOps", "RecordOps\RecordOps.csproj", "{13C35CF9-1985-4319-821F-F42B97950B6D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordOps", "RecordOps\RecordOps.csproj", "{E40B5F7C-703F-44FD-916F-A1C7154FC9E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{6414C423-CE23-4285-91B9-0DC7B2CD2B6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6414C423-CE23-4285-91B9-0DC7B2CD2B6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6414C423-CE23-4285-91B9-0DC7B2CD2B6E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{13C35CF9-1985-4319-821F-F42B97950B6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{13C35CF9-1985-4319-821F-F42B97950B6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{13C35CF9-1985-4319-821F-F42B97950B6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{13C35CF9-1985-4319-821F-F42B97950B6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E40B5F7C-703F-44FD-916F-A1C7154FC9E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E40B5F7C-703F-44FD-916F-A1C7154FC9E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E40B5F7C-703F-44FD-916F-A1C7154FC9E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E40B5F7C-703F-44FD-916F-A1C7154FC9E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

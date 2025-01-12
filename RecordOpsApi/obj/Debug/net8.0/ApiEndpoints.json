@@ -11,11 +11,6 @@
         "Name": "customer",
         "Type": "RecordOpsApi.Models.MCustomer",
         "IsRequired": true
-      },
-      {
-        "Name": "image",
-        "Type": "Microsoft.AspNetCore.Http.IFormFile",
-        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -65,7 +60,7 @@
   {
     "ContainingType": "RecordOpsApi.Controllers.CustomerController",
     "Method": "UpdateCustomer",
-    "RelativePath": "api/Customer/UpdateCustomer",
+    "RelativePath": "api/Customer/UpdateCustomer/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -77,13 +72,8 @@
       },
       {
         "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "image",
-        "Type": "Microsoft.AspNetCore.Http.IFormFile",
-        "IsRequired": false
+        "Type": "",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

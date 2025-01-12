@@ -14,6 +14,7 @@
         public int? customerPhone { get; set; }
         public string? customerImage { get; set; }
         public virtual DistrictModel district { get; set; }
+        public virtual SubdistrictModel Subdistrict { get; set; }
 
 
     }

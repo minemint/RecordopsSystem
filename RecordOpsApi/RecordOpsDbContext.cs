@@ -14,7 +14,7 @@ namespace RecordOpsApi
         public DbSet<MDistrict> district_tbl { get; set; }
         public DbSet<MSubdistrict> subdistrict_tbl { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
-        { // กำหนด Primary Key
+        {
             modelBuilder.Entity<MCustomer>().HasKey(x => x.customerId);
             modelBuilder.Entity<MDistrict>().HasKey(x => x.districtId);
             modelBuilder.Entity<MSubdistrict>().HasKey(x => x.subdistrictId);
@@ -23,15 +23,14 @@ namespace RecordOpsApi
                 .WithMany()
                 .HasForeignKey(d => d.districtId);
 
-            modelBuilder.Entity<MDistrict>()
-        .HasMany(d => d.Subdistricts)
-        .WithOne()
-        .HasForeignKey(s => s.subdistrictId);
-            
-                
-            
 
-            
+            modelBuilder.Entity<MCustomer>().HasOne(d => d.Subdistrict)
+                .WithMany()
+                .HasForeignKey(d => d.subdistrictId);
+
+
+
+
             // Mapping ชื่อตาราง (Optional)
             modelBuilder.Entity<MCustomer>().ToTable("customer_tbl");
             modelBuilder.Entity<MDistrict>().ToTable("district_tbl");

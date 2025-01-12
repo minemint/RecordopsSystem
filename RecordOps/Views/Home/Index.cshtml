@@ -13,26 +13,81 @@
     <thead>
         <tr>
             <th>
-                Name
+                @Html.DisplayNameFor(model => model.CustomerId)
             </th>
             <th>
-                Address
+                @Html.DisplayNameFor(model => model.CustomerTitleName)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerFName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerLName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerProvince)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.District.districtName) 
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Subdistrict.subdistrictName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerPostalCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerPhone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.customerImage)
+            </th>
+            <th></th>
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model) {
         <tr>
             <td>
-                    @Html.DisplayFor(modelItem => item.customer.customerFName)
+                @Html.DisplayFor(modelItem => item.CustomerId)
             </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.customer.customerAddress)
-                    @Html.DisplayFor(modelItem => item.district.districtName)
             <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                @Html.DisplayFor(modelItem => item.CustomerTitleName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerFName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerLName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerAddress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerProvince)
+            </td>
+            <td>
+                    @Html.DisplayFor(modelItem => item.District.districtName)
+            </td>
+            <td>
+                    @Html.DisplayFor(modelItem => item.Subdistrict.subdistrictName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerPostalCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerPhone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.customerImage)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.CustomerId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.CustomerId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.CustomerId">Delete</a>
             </td>
         </tr>
 }

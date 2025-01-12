@@ -47,7 +47,17 @@
         ],
         "requestBody": {
           "content": {
-            "multipart/form-data": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MCustomer"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MCustomer"
+              }
+            },
+            "application/*+json": {
               "schema": {
                 "$ref": "#/components/schemas/MCustomer"
               }
@@ -61,7 +71,7 @@
         }
       }
     },
-    "/api/Customer/UpdateCustomer": {
+    "/api/Customer/UpdateCustomer/{id}": {
       "put": {
         "tags": [
           "Customer"
@@ -69,16 +79,26 @@
         "parameters": [
           {
             "name": "id",
-            "in": "query",
+            "in": "path",
+            "required": true,
             "schema": {
-              "type": "integer",
-              "format": "int32"
+              "type": "string"
             }
           }
         ],
         "requestBody": {
           "content": {
-            "multipart/form-data": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MCustomer"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MCustomer"
+              }
+            },
+            "application/*+json": {
               "schema": {
                 "$ref": "#/components/schemas/MCustomer"
               }
@@ -211,6 +231,9 @@
           },
           "district": {
             "$ref": "#/components/schemas/MDistrict"
+          },
+          "subdistrict": {
+            "$ref": "#/components/schemas/MSubdistrict"
           }
         },
         "additionalProperties": false
@@ -225,13 +248,6 @@
           },
           "districtName": {
             "type": "string",
-            "nullable": true
-          },
-          "subdistricts": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/MSubdistrict"
-            },
             "nullable": true
           }
         },

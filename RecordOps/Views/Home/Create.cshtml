@@ -1,0 +1,82 @@
+﻿@using RecordOps.ViewModels
+@model CreateViewModel
+
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>CreateViewModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="CustomerTitleName" class="control-label"></label>
+                <input asp-for="CustomerTitleName" class="form-control" />
+                <span asp-validation-for="CustomerTitleName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CustomerFName" class="control-label"></label>
+                <input asp-for="CustomerFName" class="form-control" />
+                <span asp-validation-for="CustomerFName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CustomerLName" class="control-label"></label>
+                <input asp-for="CustomerLName" class="form-control" />
+                <span asp-validation-for="CustomerLName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CustomerAddress" class="control-label"></label>
+                <input asp-for="CustomerAddress" class="form-control" />
+                <span asp-validation-for="CustomerAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CustomerProvince" class="control-label"></label>
+                <input asp-for="CustomerProvince" class="form-control" />
+                <span asp-validation-for="CustomerProvince" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DistrictId" class="control-label">District</label>
+                <select asp-for="DistrictId" class="form-control" >
+                    <option value="">Select District</option>
+                    <option value="1">A</option>
+                    <option value="2">B</option>
+
+                </select>
+                <span asp-validation-for="DistrictId" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <label asp-for="SubdistrictId" class="control-label">Subdistrict</label>
+                <select asp-for="SubdistrictId" class="form-control" >
+                    <option value="">Select Subdistrict</option>
+                    <option value="1">A 1</option>
+                    <option value="2">A 2</option>
+
+                </select>
+                <span asp-validation-for="SubdistrictId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="CustomerPostalCode" class="control-label"></label>
+                <input asp-for="CustomerPostalCode" class="form-control" />
+                <span asp-validation-for="CustomerPostalCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

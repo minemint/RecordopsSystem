@@ -1,8 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Caching.Memory;
+﻿using Microsoft.AspNetCore.Mvc;
 using RecordOpsApi.Models;
-using RecordOpsApi.Repositories;
 using RecordOpsApi.Repositories.Interfaces;
 
 namespace RecordOpsApi.Controllers
@@ -35,9 +32,9 @@ namespace RecordOpsApi.Controllers
         [HttpGet]
         [Route("GetCustomer/{id}")]
         public async Task<IActionResult> GetCustomer(int id)
-        {   
-         
-            var customer =  await _customerRepository.GetCustomer(id);
+        {
+
+            var customer = await _customerRepository.GetCustomer(id);
             if (customer == null)
             {
                 return NotFound();
@@ -47,18 +44,18 @@ namespace RecordOpsApi.Controllers
 
         [HttpPost]
         [Route("AddCustomer")]
-        public async Task<IActionResult> AddCustomer([FromBody] MCustomer customer , IFormFile? image)
+        public async Task<IActionResult> AddCustomer([FromBody] MCustomer customer)
         {
-            var newCustomer = await _customerRepository.AddCustomer(customer,image);
-           
+            var newCustomer = await _customerRepository.AddCustomer(customer);
+
             return Ok(newCustomer);
         }
 
         [HttpPut]
-        [Route("UpdateCustomer")]
-        public async Task<IActionResult> UpdateCustomer([FromBody] MCustomer customer , int id, IFormFile? image)
+        [Route("UpdateCustomer/{id}")]
+        public async Task<IActionResult> UpdateCustomer([FromBody] MCustomer customer)
         {
-            var updatedCustomer = await _customerRepository.UpdateCustomer(customer, id,image);
+            var updatedCustomer = await _customerRepository.UpdateCustomer(customer);
 
             return Ok(updatedCustomer);
         }

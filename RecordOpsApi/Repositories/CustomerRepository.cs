@@ -18,7 +18,7 @@ namespace RecordOpsApi.Repositories
         }
 
 
-        public async Task<MCustomer> AddCustomer(MCustomer customer, IFormFile? image)
+        public async Task<MCustomer> AddCustomer(MCustomer customer)
         {
 
             var newCustomer = new MCustomer
@@ -32,32 +32,8 @@ namespace RecordOpsApi.Repositories
                 districtId = customer.districtId,
                 subdistrictId = customer.subdistrictId,
                 customerPostalCode = customer.customerPostalCode
-            };           
+            };
             _context.customer_tbl.Add(newCustomer);
-
-            if (image != null)
-            {
-                string fileName = Guid.NewGuid().ToString() + Path.GetExtension(image.FileName);
-
-                string uploadFolder = Path.Combine("wwwroot","Images");
-
-                if (!Directory.Exists(uploadFolder))
-                {
-                    Directory.CreateDirectory(uploadFolder);
-                }
-
-                using (var fileStream = new FileStream(Path.Combine(uploadFolder, fileName), FileMode.Create))
-                {
-                    await image.CopyToAsync(fileStream);
-                }
-
-                newCustomer.customerImage = fileName;
-
-            }
-            else
-            {
-                newCustomer.customerImage = "noimg.jpg";
-            }
 
             await _context.SaveChangesAsync();
             return newCustomer;
@@ -72,22 +48,21 @@ namespace RecordOpsApi.Repositories
 
         public async Task<MCustomer> GetCustomer(int id)
         {
-            var customer = await _context.customer_tbl.Include(c => c.district).ThenInclude(d => d.Subdistricts).FirstOrDefaultAsync(c => c.customerId == id);
+            var customer = await _context.customer_tbl.Include(c => c.district).Include(d => d.Subdistrict).FirstOrDefaultAsync(c => c.customerId == id);
             return customer;
         }
 
         public async Task<IEnumerable<MCustomer>> GetCustomers()
         {
-            var customers = await _context.customer_tbl.Include(c => c.district).ThenInclude(d => d.Subdistricts).ToListAsync();
+            var customers = await _context.customer_tbl.Include(c => c.district).Include(d => d.Subdistrict).ToListAsync();
             return customers;
         }
 
 
-        public async Task<MCustomer> UpdateCustomer(MCustomer customer, int id, IFormFile? image)
+        public async Task<MCustomer> UpdateCustomer(MCustomer customer)
         {
-            var oldcustomer = _context.customer_tbl.Include(c => c.district).ThenInclude(d => d.Subdistricts).FirstOrDefault(c => c.customerId == id);
-
-            oldcustomer.customerTitleName = customer.customerTitleName;
+            var oldcustomer = _context.customer_tbl.Include(c => c.district).Include(d => d.Subdistrict).FirstOrDefault(c => c.customerId == customer.customerId);
+            oldcustomer.customerTitleName = oldcustomer.customerTitleName;
             oldcustomer.customerFName = customer.customerFName;
             oldcustomer.customerLName = customer.customerLName;
             oldcustomer.customerAddress = customer.customerAddress;
@@ -96,29 +71,31 @@ namespace RecordOpsApi.Repositories
             oldcustomer.subdistrictId = customer.subdistrictId;
             oldcustomer.customerPostalCode = customer.customerPostalCode;
 
-            if (image != null)
-            {
-                string fileName = Guid.NewGuid().ToString() + Path.GetExtension(image.FileName);
+            _context.customer_tbl.Update(oldcustomer);
 
-                string uploadFolder = Path.Combine("wwwroot","Images");
+            //if (image != null)
+            //{
+            //    string fileName = Guid.NewGuid().ToString() + Path.GetExtension(image.FileName);
 
-                if (!Directory.Exists(uploadFolder))
-                {
-                    Directory.CreateDirectory(uploadFolder);
-                }
+            //    string uploadFolder = Path.Combine("wwwroot", "Images");
 
-                using (var fileStream = new FileStream(Path.Combine(uploadFolder, fileName), FileMode.Create))
-                {
-                    await image.CopyToAsync(fileStream);
-                }
+            //    if (!Directory.Exists(uploadFolder))
+            //    {
+            //        Directory.CreateDirectory(uploadFolder);
+            //    }
 
-                if (oldcustomer.customerImage != "noimg.jpg")
-                {
-                    System.IO.File.Delete(Path.Combine(uploadFolder, oldcustomer.customerImage!));
-                }
+            //    using (var fileStream = new FileStream(Path.Combine(uploadFolder, fileName), FileMode.Create))
+            //    {
+            //        await image.CopyToAsync(fileStream);
+            //    }
 
-                oldcustomer.customerImage = fileName;
-            }
+            //    if (oldcustomer.customerImage != "noimg.jpg")
+            //    {
+            //        System.IO.File.Delete(Path.Combine(uploadFolder, oldcustomer.customerImage!));
+            //    }
+
+            //    oldcustomer.customerImage = fileName;
+            //}
 
             await _context.SaveChangesAsync();
             return oldcustomer;

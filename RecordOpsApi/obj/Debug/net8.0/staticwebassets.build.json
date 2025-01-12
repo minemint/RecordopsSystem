@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Mfc6hY2X5Nig5fNlqMW/sB0ZN//tDqfS2JLrglvTcNM=",
+  "Hash": "n7GirUMmStt0GRK7Brs1i4WTN6Mp9hxpwlm73Z1G+rQ=",
   "Source": "RecordOpsApi",
   "BasePath": "_content/RecordOpsApi",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "RecordOpsApi\\wwwroot",
       "Source": "RecordOpsApi",
-      "ContentRoot": "C:\\Users\\pk505\\OneDrive\\เอกสาร\\GitHub\\RecordopsSystem\\RecordOpsApi\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\RecordopsSystem\\RecordOpsApi\\wwwroot\\",
       "BasePath": "_content/RecordOpsApi",
       "Pattern": "**"
     }
