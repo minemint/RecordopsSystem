@@ -25,11 +25,8 @@ DROP TABLE IF EXISTS `district_tbl`;
 CREATE TABLE `district_tbl` (
   `districtId` int NOT NULL AUTO_INCREMENT,
   `districtName` varchar(45) DEFAULT NULL,
-  `subdistrictId` int DEFAULT NULL,
-  PRIMARY KEY (`districtId`),
-  KEY `fk_districtSub` (`subdistrictId`),
-  CONSTRAINT `fk_districtSub` FOREIGN KEY (`subdistrictId`) REFERENCES `subdistrict_tbl` (`subdistrictId`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  PRIMARY KEY (`districtId`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -38,7 +35,7 @@ CREATE TABLE `district_tbl` (
 
 LOCK TABLES `district_tbl` WRITE;
 /*!40000 ALTER TABLE `district_tbl` DISABLE KEYS */;
-INSERT INTO `district_tbl` VALUES (1,'D',1);
+INSERT INTO `district_tbl` VALUES (1,'D'),(2,'A');
 /*!40000 ALTER TABLE `district_tbl` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -51,4 +48,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-01-11 20:32:25
+-- Dump completed on 2025-01-12 18:43:27
