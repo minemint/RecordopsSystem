@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using RecordOps.Models;
+using RecordOps.ViewModels;
 using System.Diagnostics;
 
 namespace RecordOps.Controllers
@@ -9,28 +10,29 @@ namespace RecordOps.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly HttpClient _httpClient;
-
+        Uri BaseAddress = new Uri("https://localhost:7066/api");
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
             _httpClient = new HttpClient();
+            _httpClient.BaseAddress = BaseAddress;
+
         }
 
         public IActionResult Index()
         {
-            var response = _httpClient.GetAsync("https://localhost:5293/api/customer").Result;
-            if (!response.IsSuccessStatusCode)
+            List<CustomerViewModel> customers = new List<CustomerViewModel>();
+            HttpResponseMessage response = _httpClient.GetAsync(_httpClient.BaseAddress + "/Customer/GetCustomers").Result;
+            if (response.IsSuccessStatusCode)
             {
-                return View(new List<CustomerModel>());
-            }
-  
-            using (HttpContent content = response.Content)
-            {
-                var data = content.ReadAsStringAsync().Result;
-                var customers = JsonConvert.DeserializeObject<List<CustomerModel>>(data);
-                return View(customers);
-            }
+                var data = response.Content.ReadAsStringAsync().Result;
+                // Log the JSON response
+                System.Diagnostics.Debug.WriteLine(data);
+                customers = JsonConvert.DeserializeObject<List<CustomerViewModel>>(data);
 
+
+            }
+            return View(customers);
         }
 
         public IActionResult Privacy()

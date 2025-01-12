@@ -1,35 +1,40 @@
-﻿@model IEnumerable<CustomerModel>
-@{
-    ViewData["Title"] = "Home Page";
+﻿@model IEnumerable<RecordOps.ViewModels.CustomerViewModel>
 
+@{
+    ViewData["Title"] = "Index";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    @if (Model != null)
-    {
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Customer ID</th>
-                    <th>Customer Name</th>
-                    <th>Customer Address</th>
-                    <th>Customer Phone</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var item in Model)
-                {
-                    <tr>
-                        <td>@item.Name</td>
-                        <td>@item.Address</td>
-                        <td>@item.Phone</td>
+<h1>Index</h1>
 
-                    </tr>
-                }
-            </tbody>
-        </table>
-    }
-</div>
-
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Name
+            </th>
+            <th>
+                Address
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                    @Html.DisplayFor(modelItem => item.customer.customerFName)
+            </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.customer.customerAddress)
+                    @Html.DisplayFor(modelItem => item.district.districtName)
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

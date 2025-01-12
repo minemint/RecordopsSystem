@@ -3,20 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\pk505\\OneDrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\GitHub\\RecordopsSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{13C35CF9-1985-4319-821F-F42B97950B6D}|RecordOps\\RecordOps.csproj|c:\\users\\pk505\\onedrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\github\\recordopssystem\\recordops\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13C35CF9-1985-4319-821F-F42B97950B6D}|RecordOps\\RecordOps.csproj|solutionrelative:recordops\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{13C35CF9-1985-4319-821F-F42B97950B6D}|RecordOps\\RecordOps.csproj|c:\\users\\pk505\\onedrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\github\\recordopssystem\\recordops\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{13C35CF9-1985-4319-821F-F42B97950B6D}|RecordOps\\RecordOps.csproj|solutionrelative:recordops\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6414C423-CE23-4285-91B9-0DC7B2CD2B6E}|RecordOpsApi\\RecordOpsApi.csproj|c:\\users\\pk505\\onedrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\github\\recordopssystem\\recordopsapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{6414C423-CE23-4285-91B9-0DC7B2CD2B6E}|RecordOpsApi\\RecordOpsApi.csproj|solutionrelative:recordopsapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{13C35CF9-1985-4319-821F-F42B97950B6D}|RecordOps\\RecordOps.csproj|c:\\users\\pk505\\onedrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\github\\recordopssystem\\recordops\\viewmodels\\customerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13C35CF9-1985-4319-821F-F42B97950B6D}|RecordOps\\RecordOps.csproj|solutionrelative:recordops\\viewmodels\\customerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{13C35CF9-1985-4319-821F-F42B97950B6D}|RecordOps\\RecordOps.csproj|c:\\users\\pk505\\onedrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\github\\recordopssystem\\recordops\\models\\customermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13C35CF9-1985-4319-821F-F42B97950B6D}|RecordOps\\RecordOps.csproj|solutionrelative:recordops\\models\\customermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13C35CF9-1985-4319-821F-F42B97950B6D}|RecordOps\\RecordOps.csproj|c:\\users\\pk505\\onedrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\github\\recordopssystem\\recordops\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{13C35CF9-1985-4319-821F-F42B97950B6D}|RecordOps\\RecordOps.csproj|solutionrelative:recordops\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{13C35CF9-1985-4319-821F-F42B97950B6D}|RecordOps\\RecordOps.csproj|c:\\users\\pk505\\onedrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\github\\recordopssystem\\recordops\\models\\districtmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13C35CF9-1985-4319-821F-F42B97950B6D}|RecordOps\\RecordOps.csproj|solutionrelative:recordops\\models\\districtmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13C35CF9-1985-4319-821F-F42B97950B6D}|RecordOps\\RecordOps.csproj|c:\\users\\pk505\\onedrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\github\\recordopssystem\\recordops\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13C35CF9-1985-4319-821F-F42B97950B6D}|RecordOps\\RecordOps.csproj|solutionrelative:recordops\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6414C423-CE23-4285-91B9-0DC7B2CD2B6E}|RecordOpsApi\\RecordOpsApi.csproj|c:\\users\\pk505\\onedrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\github\\recordopssystem\\recordopsapi\\recordopsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6414C423-CE23-4285-91B9-0DC7B2CD2B6E}|RecordOpsApi\\RecordOpsApi.csproj|solutionrelative:recordopsapi\\recordopsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6414C423-CE23-4285-91B9-0DC7B2CD2B6E}|RecordOpsApi\\RecordOpsApi.csproj|c:\\users\\pk505\\onedrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\github\\recordopssystem\\recordopsapi\\repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6414C423-CE23-4285-91B9-0DC7B2CD2B6E}|RecordOpsApi\\RecordOpsApi.csproj|solutionrelative:recordopsapi\\repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13C35CF9-1985-4319-821F-F42B97950B6D}|RecordOps\\RecordOps.csproj|c:\\users\\pk505\\onedrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\github\\recordopssystem\\recordops\\models\\subdistrictmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13C35CF9-1985-4319-821F-F42B97950B6D}|RecordOps\\RecordOps.csproj|solutionrelative:recordops\\models\\subdistrictmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6414C423-CE23-4285-91B9-0DC7B2CD2B6E}|RecordOpsApi\\RecordOpsApi.csproj|c:\\users\\pk505\\onedrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\github\\recordopssystem\\recordopsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6414C423-CE23-4285-91B9-0DC7B2CD2B6E}|RecordOpsApi\\RecordOpsApi.csproj|solutionrelative:recordopsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 21,
+          "SelectedChildIndex": 20,
           "Children": [
             {
               "$type": "Bookmark",
@@ -102,15 +122,41 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\pk505\\OneDrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\GitHub\\RecordopsSystem\\RecordOps\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "RecordOps\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\pk505\\OneDrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\GitHub\\RecordopsSystem\\RecordOps\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "RecordOps\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAuwCIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T03:36:35.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\pk505\\OneDrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\GitHub\\RecordopsSystem\\RecordOpsApi\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "RecordOpsApi\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\pk505\\OneDrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\GitHub\\RecordopsSystem\\RecordOpsApi\\Properties\\launchSettings.json",
-              "RelativeToolTip": "RecordOpsApi\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-11T18:35:16.412Z",
+              "Title": "CustomerViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\pk505\\OneDrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\GitHub\\RecordopsSystem\\RecordOps\\ViewModels\\CustomerViewModel.cs",
+              "RelativeDocumentMoniker": "RecordOps\\ViewModels\\CustomerViewModel.cs",
+              "ToolTip": "C:\\Users\\pk505\\OneDrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\GitHub\\RecordopsSystem\\RecordOps\\ViewModels\\CustomerViewModel.cs",
+              "RelativeToolTip": "RecordOps\\ViewModels\\CustomerViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T03:33:39.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\pk505\\OneDrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\GitHub\\RecordopsSystem\\RecordOps\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "RecordOps\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\pk505\\OneDrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\GitHub\\RecordopsSystem\\RecordOps\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "RecordOps\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAB4AAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-12T04:01:53.117Z",
               "EditorCaption": ""
             },
             {
@@ -121,35 +167,74 @@
               "RelativeDocumentMoniker": "RecordOps\\Models\\CustomerModel.cs",
               "ToolTip": "C:\\Users\\pk505\\OneDrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\GitHub\\RecordopsSystem\\RecordOps\\Models\\CustomerModel.cs",
               "RelativeToolTip": "RecordOps\\Models\\CustomerModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T18:33:33.913Z",
+              "WhenOpened": "2025-01-12T04:06:15.439Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\pk505\\OneDrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\GitHub\\RecordopsSystem\\RecordOps\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "RecordOps\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\pk505\\OneDrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\GitHub\\RecordopsSystem\\RecordOps\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "RecordOps\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAcwBEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-11T18:31:38.514Z",
+              "Title": "DistrictModel.cs",
+              "DocumentMoniker": "C:\\Users\\pk505\\OneDrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\GitHub\\RecordopsSystem\\RecordOps\\Models\\DistrictModel.cs",
+              "RelativeDocumentMoniker": "RecordOps\\Models\\DistrictModel.cs",
+              "ToolTip": "C:\\Users\\pk505\\OneDrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\GitHub\\RecordopsSystem\\RecordOps\\Models\\DistrictModel.cs",
+              "RelativeToolTip": "RecordOps\\Models\\DistrictModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T03:36:20.727Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\pk505\\OneDrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\GitHub\\RecordopsSystem\\RecordOps\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "RecordOps\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\pk505\\OneDrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\GitHub\\RecordopsSystem\\RecordOps\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "RecordOps\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAuwCIAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "RecordOpsDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\pk505\\OneDrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\GitHub\\RecordopsSystem\\RecordOpsApi\\RecordOpsDbContext.cs",
+              "RelativeDocumentMoniker": "RecordOpsApi\\RecordOpsDbContext.cs",
+              "ToolTip": "C:\\Users\\pk505\\OneDrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\GitHub\\RecordopsSystem\\RecordOpsApi\\RecordOpsDbContext.cs",
+              "RelativeToolTip": "RecordOpsApi\\RecordOpsDbContext.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAgwBUAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T18:23:46.163Z",
+              "WhenOpened": "2025-01-12T04:13:39.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SubdistrictModel.cs",
+              "DocumentMoniker": "C:\\Users\\pk505\\OneDrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\GitHub\\RecordopsSystem\\RecordOps\\Models\\SubdistrictModel.cs",
+              "RelativeDocumentMoniker": "RecordOps\\Models\\SubdistrictModel.cs",
+              "ToolTip": "C:\\Users\\pk505\\OneDrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\GitHub\\RecordopsSystem\\RecordOps\\Models\\SubdistrictModel.cs",
+              "RelativeToolTip": "RecordOps\\Models\\SubdistrictModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T03:35:58.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CustomerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\pk505\\OneDrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\GitHub\\RecordopsSystem\\RecordOpsApi\\Repositories\\CustomerRepository.cs",
+              "RelativeDocumentMoniker": "RecordOpsApi\\Repositories\\CustomerRepository.cs",
+              "ToolTip": "C:\\Users\\pk505\\OneDrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\GitHub\\RecordopsSystem\\RecordOpsApi\\Repositories\\CustomerRepository.cs",
+              "RelativeToolTip": "RecordOpsApi\\Repositories\\CustomerRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T04:13:35.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\pk505\\OneDrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\GitHub\\RecordopsSystem\\RecordOpsApi\\Program.cs",
+              "RelativeDocumentMoniker": "RecordOpsApi\\Program.cs",
+              "ToolTip": "C:\\Users\\pk505\\OneDrive\\\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\\GitHub\\RecordopsSystem\\RecordOpsApi\\Program.cs",
+              "RelativeToolTip": "RecordOpsApi\\Program.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAowDQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T04:07:04.348Z",
               "EditorCaption": ""
             }
           ]

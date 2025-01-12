@@ -19,6 +19,10 @@ namespace RecordOpsApi
             modelBuilder.Entity<MDistrict>().HasKey(x => x.districtId);
             modelBuilder.Entity<MSubdistrict>().HasKey(x => x.subdistrictId);
 
+            modelBuilder.Entity<MCustomer>().HasOne(d => d.district)
+                .WithMany()
+                .HasForeignKey(d => d.districtId);
+
             modelBuilder.Entity<MDistrict>()
         .HasMany(d => d.Subdistricts)
         .WithOne()
