@@ -26,7 +26,7 @@ CREATE TABLE `subdistrict_tbl` (
   `subdistrictId` int NOT NULL AUTO_INCREMENT,
   `subdistrictName` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`subdistrictId`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -35,7 +35,7 @@ CREATE TABLE `subdistrict_tbl` (
 
 LOCK TABLES `subdistrict_tbl` WRITE;
 /*!40000 ALTER TABLE `subdistrict_tbl` DISABLE KEYS */;
-INSERT INTO `subdistrict_tbl` VALUES (1,'J');
+INSERT INTO `subdistrict_tbl` VALUES (1,'Anusawari'),(2,'Silom');
 /*!40000 ALTER TABLE `subdistrict_tbl` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -48,4 +48,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-01-12 18:43:27
+-- Dump completed on 2025-01-13  3:08:53

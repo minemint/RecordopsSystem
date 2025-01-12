@@ -35,7 +35,7 @@ CREATE TABLE `district_tbl` (
 
 LOCK TABLES `district_tbl` WRITE;
 /*!40000 ALTER TABLE `district_tbl` DISABLE KEYS */;
-INSERT INTO `district_tbl` VALUES (1,'D'),(2,'A');
+INSERT INTO `district_tbl` VALUES (1,'Thon Buri'),(2,'Bang Rak');
 /*!40000 ALTER TABLE `district_tbl` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -48,4 +48,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-01-12 18:43:27
+-- Dump completed on 2025-01-13  3:08:53
