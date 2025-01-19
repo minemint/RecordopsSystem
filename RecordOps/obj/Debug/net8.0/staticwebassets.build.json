@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "l00MU2yVN5JKqVLLg+hbODT8DEBrSpbNRGfOaewsd7Y=",
+  "Hash": "CcBAjATucysIjZ9b5AsqBesy3EysmTdsXhKh/F+Zq/U=",
   "Source": "RecordOps",
   "BasePath": "_content/RecordOps",
   "Mode": "Default",
@@ -1319,6 +1319,27 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
+      "Identity": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\uploads\\83235d70-2b3e-409b-a0b1-fdb2a5b902f7.jpg",
+      "SourceId": "RecordOps",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\",
+      "BasePath": "_content/RecordOps",
+      "RelativePath": "uploads/83235d70-2b3e-409b-a0b1-fdb2a5b902f7#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8g02cta59m",
+      "Integrity": "yG5YKIJrBygwsUgnO0lVzQ5HwZuBRRzMnYg0Sp8PBek=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\83235d70-2b3e-409b-a0b1-fdb2a5b902f7.jpg"
+    },
+    {
       "Identity": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\uploads\\ba74e89d-3a1e-41a8-9ba1-1b6bd2e21716.jpg",
       "SourceId": "RecordOps",
       "SourceType": "Discovered",
@@ -1338,6 +1359,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\ba74e89d-3a1e-41a8-9ba1-1b6bd2e21716.jpg"
+    },
+    {
+      "Identity": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\uploads\\cf47125e-4c17-4b15-9254-daf142d4497a.png",
+      "SourceId": "RecordOps",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\",
+      "BasePath": "_content/RecordOps",
+      "RelativePath": "uploads/cf47125e-4c17-4b15-9254-daf142d4497a#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "04p15nm203",
+      "Integrity": "YPYZ2rxI/Rhjny3lsUUvYUOF2hMysrM0W4lI2lBl+oc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\cf47125e-4c17-4b15-9254-daf142d4497a.png"
+    },
+    {
+      "Identity": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\uploads\\def0d101-7d33-4a52-b9d8-42e431020853.jpg",
+      "SourceId": "RecordOps",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\",
+      "BasePath": "_content/RecordOps",
+      "RelativePath": "uploads/def0d101-7d33-4a52-b9d8-42e431020853#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "h2lx4s3jjh",
+      "Integrity": "6UwbbvcVW7IYTizgqHnEwQDB1lO5EcXA3ceu01nG0Iw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\def0d101-7d33-4a52-b9d8-42e431020853.jpg"
     }
   ],
   "Endpoints": [
@@ -6284,7 +6347,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 12 Jan 2025 06:42:17 GMT"
+          "Value": "Sun, 19 Jan 2025 15:11:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6321,7 +6384,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 12 Jan 2025 06:42:17 GMT"
+          "Value": "Sun, 19 Jan 2025 15:11:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6358,7 +6421,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 12 Jan 2025 06:42:17 GMT"
+          "Value": "Sun, 19 Jan 2025 15:11:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6403,7 +6466,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 12 Jan 2025 06:42:17 GMT"
+          "Value": "Sun, 19 Jan 2025 15:11:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6422,6 +6485,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-jm4ZIUYzxMnunf9EdyoJh43WnP1JhdL10QWdBUk36M0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/83235d70-2b3e-409b-a0b1-fdb2a5b902f7.8g02cta59m.jpg",
+      "AssetFile": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\uploads\\83235d70-2b3e-409b-a0b1-fdb2a5b902f7.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6258"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yG5YKIJrBygwsUgnO0lVzQ5HwZuBRRzMnYg0Sp8PBek=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 20:06:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8g02cta59m"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/83235d70-2b3e-409b-a0b1-fdb2a5b902f7.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yG5YKIJrBygwsUgnO0lVzQ5HwZuBRRzMnYg0Sp8PBek="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/83235d70-2b3e-409b-a0b1-fdb2a5b902f7.jpg",
+      "AssetFile": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\uploads\\83235d70-2b3e-409b-a0b1-fdb2a5b902f7.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6258"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yG5YKIJrBygwsUgnO0lVzQ5HwZuBRRzMnYg0Sp8PBek=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 20:06:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yG5YKIJrBygwsUgnO0lVzQ5HwZuBRRzMnYg0Sp8PBek="
         }
       ]
     },
@@ -6494,6 +6639,170 @@
         {
           "Name": "Last-Modified",
           "Value": "Sun, 12 Jan 2025 19:52:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6UwbbvcVW7IYTizgqHnEwQDB1lO5EcXA3ceu01nG0Iw="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/cf47125e-4c17-4b15-9254-daf142d4497a.04p15nm203.png",
+      "AssetFile": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\uploads\\cf47125e-4c17-4b15-9254-daf142d4497a.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1590098"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YPYZ2rxI/Rhjny3lsUUvYUOF2hMysrM0W4lI2lBl+oc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 13 Jan 2025 02:45:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "04p15nm203"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/cf47125e-4c17-4b15-9254-daf142d4497a.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YPYZ2rxI/Rhjny3lsUUvYUOF2hMysrM0W4lI2lBl+oc="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/cf47125e-4c17-4b15-9254-daf142d4497a.png",
+      "AssetFile": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\uploads\\cf47125e-4c17-4b15-9254-daf142d4497a.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1590098"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YPYZ2rxI/Rhjny3lsUUvYUOF2hMysrM0W4lI2lBl+oc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 13 Jan 2025 02:45:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YPYZ2rxI/Rhjny3lsUUvYUOF2hMysrM0W4lI2lBl+oc="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/def0d101-7d33-4a52-b9d8-42e431020853.h2lx4s3jjh.jpg",
+      "AssetFile": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\uploads\\def0d101-7d33-4a52-b9d8-42e431020853.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7452"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6UwbbvcVW7IYTizgqHnEwQDB1lO5EcXA3ceu01nG0Iw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 13 Jan 2025 02:46:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h2lx4s3jjh"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/def0d101-7d33-4a52-b9d8-42e431020853.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6UwbbvcVW7IYTizgqHnEwQDB1lO5EcXA3ceu01nG0Iw="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/def0d101-7d33-4a52-b9d8-42e431020853.jpg",
+      "AssetFile": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\uploads\\def0d101-7d33-4a52-b9d8-42e431020853.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7452"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6UwbbvcVW7IYTizgqHnEwQDB1lO5EcXA3ceu01nG0Iw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 13 Jan 2025 02:46:49 GMT"
         },
         {
           "Name": "Cache-Control",

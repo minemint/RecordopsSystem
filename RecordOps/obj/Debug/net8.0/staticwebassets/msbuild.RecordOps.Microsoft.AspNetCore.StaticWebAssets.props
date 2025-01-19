@@ -1098,6 +1098,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\RecordOps.u5e37k7enh.bundle.scp.css'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\83235d70-2b3e-409b-a0b1-fdb2a5b902f7.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>RecordOps</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/RecordOps</BasePath>
+      <RelativePath>uploads/83235d70-2b3e-409b-a0b1-fdb2a5b902f7.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>8g02cta59m</Fingerprint>
+      <Integrity>yG5YKIJrBygwsUgnO0lVzQ5HwZuBRRzMnYg0Sp8PBek=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\83235d70-2b3e-409b-a0b1-fdb2a5b902f7.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\ba74e89d-3a1e-41a8-9ba1-1b6bd2e21716.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>RecordOps</SourceId>
@@ -1115,6 +1133,42 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\ba74e89d-3a1e-41a8-9ba1-1b6bd2e21716.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\cf47125e-4c17-4b15-9254-daf142d4497a.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>RecordOps</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/RecordOps</BasePath>
+      <RelativePath>uploads/cf47125e-4c17-4b15-9254-daf142d4497a.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>04p15nm203</Fingerprint>
+      <Integrity>YPYZ2rxI/Rhjny3lsUUvYUOF2hMysrM0W4lI2lBl+oc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\cf47125e-4c17-4b15-9254-daf142d4497a.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\def0d101-7d33-4a52-b9d8-42e431020853.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>RecordOps</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/RecordOps</BasePath>
+      <RelativePath>uploads/def0d101-7d33-4a52-b9d8-42e431020853.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>h2lx4s3jjh</Fingerprint>
+      <Integrity>6UwbbvcVW7IYTizgqHnEwQDB1lO5EcXA3ceu01nG0Iw=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\def0d101-7d33-4a52-b9d8-42e431020853.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>

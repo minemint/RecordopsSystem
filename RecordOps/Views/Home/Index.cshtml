@@ -25,7 +25,6 @@
         <thead class="bg-light">
             <tr>
                 <th hidden>
-                    @Html.DisplayNameFor(model => model.CustomerId)
                 </th>
                 <th>
                     Name
@@ -47,30 +46,30 @@
             {
                 <tr>
                     <td hidden>
-                        @Html.DisplayFor(modelItem => item.CustomerId)
+                        @Html.DisplayFor(modelItem => item.customerId)
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.CustomerTitleName)
-                        @Html.DisplayFor(modelItem => item.CustomerFName)
-                        @Html.DisplayFor(modelItem => item.CustomerLName)
+                        @Html.DisplayFor(modelItem => item.customerTitleName)
+                        @Html.DisplayFor(modelItem => item.customerFName)
+                        @Html.DisplayFor(modelItem => item.customerLName)
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.CustomerAddress)
-                        @Html.DisplayFor(modelItem => item.CustomerProvince)
-                        @Html.DisplayFor(modelItem => item.District.districtName)
-                        @Html.DisplayFor(modelItem => item.Subdistrict.subdistrictName)
-                        @Html.DisplayFor(modelItem => item.CustomerPostalCode)
+                        @Html.DisplayFor(modelItem => item.customerAddress)
+                        @Html.DisplayFor(modelItem => item.districtNameTh)
+                        @Html.DisplayFor(modelItem => item.provinceNameTh)
+                        @Html.DisplayFor(modelItem => item.subdistrictNameTh)
+                        @Html.DisplayFor(modelItem => item.postalCode)
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.CustomerPhone)
+                        @Html.DisplayFor(modelItem => item.customerPhone)
                     </td>
                     <td>
                         <img src="~/uploads/@Html.DisplayFor(modelItem => item.customerImage)" alt="Customer Image" width="120" height="120" />
                     </td>
                     <td>
                         <div class="d-flex gap-2">
-                            <a asp-action="Edit" asp-route-id="@item.CustomerId" class="btn btn-sm btn-outline-primary">Edit</a>
-                            <a asp-action="Delete" asp-route-id="@item.CustomerId" class="btn btn-sm btn-outline-danger">Delete</a>
+                            <a asp-action="Edit" asp-route-id="@item.customerId" class="btn btn-sm btn-outline-primary">Edit</a>
+                            <a asp-action="Delete" asp-route-id="@item.customerId" class="btn btn-sm btn-outline-danger">Delete</a>
                         </div>
                     </td>
                 </tr>

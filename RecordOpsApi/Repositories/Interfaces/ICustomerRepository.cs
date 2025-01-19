@@ -9,5 +9,13 @@ namespace RecordOpsApi.Repositories.Interfaces
         Task<MCustomer> AddCustomer(MCustomer customer);
         Task<MCustomer> UpdateCustomer(MCustomer customer);
         void DeleteCustomer(int id);
+        Task<IEnumerable<MCustomer>> GetCustomersWithStoreP();
+        Task<IEnumerable<MDistrict>> GetDistricts();
+        Task<IEnumerable<MSubdistrict>> GetSubdistricts();
+        Task<IEnumerable<MProvince>> GetProvinces();
+        Task<IEnumerable<MSubdistrict>> GetSubdistrictsWithDistrict(int id);
+        Task<IEnumerable<MDistrict>> GetDistrictsWithProvince(int id);
+
+
     }
 }

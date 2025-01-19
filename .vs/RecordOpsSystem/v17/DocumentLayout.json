@@ -3,8 +3,84 @@
   "WorkspaceRootPath": "D:\\Project\\RecordopsSystem\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6414C423-CE23-4285-91B9-0DC7B2CD2B6E}|RecordOpsApi\\RecordOpsApi.csproj|d:\\project\\recordopssystem\\recordopsapi\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6414C423-CE23-4285-91B9-0DC7B2CD2B6E}|RecordOpsApi\\RecordOpsApi.csproj|solutionrelative:recordopsapi\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6414C423-CE23-4285-91B9-0DC7B2CD2B6E}|RecordOpsApi\\RecordOpsApi.csproj|d:\\project\\recordopssystem\\recordopsapi\\repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6414C423-CE23-4285-91B9-0DC7B2CD2B6E}|RecordOpsApi\\RecordOpsApi.csproj|solutionrelative:recordopsapi\\repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6414C423-CE23-4285-91B9-0DC7B2CD2B6E}|RecordOpsApi\\RecordOpsApi.csproj|d:\\project\\recordopssystem\\recordopsapi\\repositories\\interfaces\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6414C423-CE23-4285-91B9-0DC7B2CD2B6E}|RecordOpsApi\\RecordOpsApi.csproj|solutionrelative:recordopsapi\\repositories\\interfaces\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6414C423-CE23-4285-91B9-0DC7B2CD2B6E}|RecordOpsApi\\RecordOpsApi.csproj|d:\\project\\recordopssystem\\recordopsapi\\recordopsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6414C423-CE23-4285-91B9-0DC7B2CD2B6E}|RecordOpsApi\\RecordOpsApi.csproj|solutionrelative:recordopsapi\\recordopsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6414C423-CE23-4285-91B9-0DC7B2CD2B6E}|RecordOpsApi\\RecordOpsApi.csproj|d:\\project\\recordopssystem\\recordopsapi\\recordopsapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6414C423-CE23-4285-91B9-0DC7B2CD2B6E}|RecordOpsApi\\RecordOpsApi.csproj|solutionrelative:recordopsapi\\recordopsapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E40B5F7C-703F-44FD-916F-A1C7154FC9E6}|RecordOps\\RecordOps.csproj|d:\\project\\recordopssystem\\recordops\\viewmodels\\createviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E40B5F7C-703F-44FD-916F-A1C7154FC9E6}|RecordOps\\RecordOps.csproj|solutionrelative:recordops\\viewmodels\\createviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6414C423-CE23-4285-91B9-0DC7B2CD2B6E}|RecordOpsApi\\RecordOpsApi.csproj|d:\\project\\recordopssystem\\recordopsapi\\models\\msubdistrict.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6414C423-CE23-4285-91B9-0DC7B2CD2B6E}|RecordOpsApi\\RecordOpsApi.csproj|solutionrelative:recordopsapi\\models\\msubdistrict.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6414C423-CE23-4285-91B9-0DC7B2CD2B6E}|RecordOpsApi\\RecordOpsApi.csproj|d:\\project\\recordopssystem\\recordopsapi\\models\\mdistrict.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6414C423-CE23-4285-91B9-0DC7B2CD2B6E}|RecordOpsApi\\RecordOpsApi.csproj|solutionrelative:recordopsapi\\models\\mdistrict.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6414C423-CE23-4285-91B9-0DC7B2CD2B6E}|RecordOpsApi\\RecordOpsApi.csproj|d:\\project\\recordopssystem\\recordopsapi\\models\\mprovince.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6414C423-CE23-4285-91B9-0DC7B2CD2B6E}|RecordOpsApi\\RecordOpsApi.csproj|solutionrelative:recordopsapi\\models\\mprovince.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6414C423-CE23-4285-91B9-0DC7B2CD2B6E}|RecordOpsApi\\RecordOpsApi.csproj|d:\\project\\recordopssystem\\recordopsapi\\models\\mcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6414C423-CE23-4285-91B9-0DC7B2CD2B6E}|RecordOpsApi\\RecordOpsApi.csproj|solutionrelative:recordopsapi\\models\\mcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E40B5F7C-703F-44FD-916F-A1C7154FC9E6}|RecordOps\\RecordOps.csproj|d:\\project\\recordopssystem\\recordops\\views\\home\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E40B5F7C-703F-44FD-916F-A1C7154FC9E6}|RecordOps\\RecordOps.csproj|solutionrelative:recordops\\views\\home\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E40B5F7C-703F-44FD-916F-A1C7154FC9E6}|RecordOps\\RecordOps.csproj|d:\\project\\recordopssystem\\recordops\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E40B5F7C-703F-44FD-916F-A1C7154FC9E6}|RecordOps\\RecordOps.csproj|solutionrelative:recordops\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E40B5F7C-703F-44FD-916F-A1C7154FC9E6}|RecordOps\\RecordOps.csproj|d:\\project\\recordopssystem\\recordops\\viewmodels\\customerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E40B5F7C-703F-44FD-916F-A1C7154FC9E6}|RecordOps\\RecordOps.csproj|solutionrelative:recordops\\viewmodels\\customerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E40B5F7C-703F-44FD-916F-A1C7154FC9E6}|RecordOps\\RecordOps.csproj|d:\\project\\recordopssystem\\recordops\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E40B5F7C-703F-44FD-916F-A1C7154FC9E6}|RecordOps\\RecordOps.csproj|solutionrelative:recordops\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E40B5F7C-703F-44FD-916F-A1C7154FC9E6}|RecordOps\\RecordOps.csproj|d:\\project\\recordopssystem\\recordops\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E40B5F7C-703F-44FD-916F-A1C7154FC9E6}|RecordOps\\RecordOps.csproj|solutionrelative:recordops\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E40B5F7C-703F-44FD-916F-A1C7154FC9E6}|RecordOps\\RecordOps.csproj|d:\\project\\recordopssystem\\recordops\\views\\home\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E40B5F7C-703F-44FD-916F-A1C7154FC9E6}|RecordOps\\RecordOps.csproj|solutionrelative:recordops\\views\\home\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E40B5F7C-703F-44FD-916F-A1C7154FC9E6}|RecordOps\\RecordOps.csproj|d:\\project\\recordopssystem\\recordops\\views\\home\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E40B5F7C-703F-44FD-916F-A1C7154FC9E6}|RecordOps\\RecordOps.csproj|solutionrelative:recordops\\views\\home\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E40B5F7C-703F-44FD-916F-A1C7154FC9E6}|RecordOps\\RecordOps.csproj|d:\\project\\recordopssystem\\recordops\\models\\districtmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E40B5F7C-703F-44FD-916F-A1C7154FC9E6}|RecordOps\\RecordOps.csproj|solutionrelative:recordops\\models\\districtmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E40B5F7C-703F-44FD-916F-A1C7154FC9E6}|RecordOps\\RecordOps.csproj|d:\\project\\recordopssystem\\recordops\\models\\customermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E40B5F7C-703F-44FD-916F-A1C7154FC9E6}|RecordOps\\RecordOps.csproj|solutionrelative:recordops\\models\\customermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E40B5F7C-703F-44FD-916F-A1C7154FC9E6}|RecordOps\\RecordOps.csproj|d:\\project\\recordopssystem\\recordops\\recordops.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E40B5F7C-703F-44FD-916F-A1C7154FC9E6}|RecordOps\\RecordOps.csproj|solutionrelative:recordops\\recordops.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +90,266 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RecordOpsApi",
+              "DocumentMoniker": "D:\\Project\\RecordopsSystem\\RecordOpsApi\\RecordOpsApi.csproj",
+              "RelativeDocumentMoniker": "RecordOpsApi\\RecordOpsApi.csproj",
+              "ToolTip": "D:\\Project\\RecordopsSystem\\RecordOpsApi\\RecordOpsApi.csproj",
+              "RelativeToolTip": "RecordOpsApi\\RecordOpsApi.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-19T15:13:01.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RecordOpsDbContext.cs",
+              "DocumentMoniker": "D:\\Project\\RecordopsSystem\\RecordOpsApi\\RecordOpsDbContext.cs",
+              "RelativeDocumentMoniker": "RecordOpsApi\\RecordOpsDbContext.cs",
+              "ToolTip": "D:\\Project\\RecordopsSystem\\RecordOpsApi\\RecordOpsDbContext.cs",
+              "RelativeToolTip": "RecordOpsApi\\RecordOpsDbContext.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAIwDgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T15:12:20.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MSubdistrict.cs",
+              "DocumentMoniker": "D:\\Project\\RecordopsSystem\\RecordOpsApi\\Models\\MSubdistrict.cs",
+              "RelativeDocumentMoniker": "RecordOpsApi\\Models\\MSubdistrict.cs",
+              "ToolTip": "D:\\Project\\RecordopsSystem\\RecordOpsApi\\Models\\MSubdistrict.cs",
+              "RelativeToolTip": "RecordOpsApi\\Models\\MSubdistrict.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T15:10:25.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ICustomerRepository.cs",
+              "DocumentMoniker": "D:\\Project\\RecordopsSystem\\RecordOpsApi\\Repositories\\Interfaces\\ICustomerRepository.cs",
+              "RelativeDocumentMoniker": "RecordOpsApi\\Repositories\\Interfaces\\ICustomerRepository.cs",
+              "ToolTip": "D:\\Project\\RecordopsSystem\\RecordOpsApi\\Repositories\\Interfaces\\ICustomerRepository.cs",
+              "RelativeToolTip": "RecordOpsApi\\Repositories\\Interfaces\\ICustomerRepository.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABAAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T11:11:07.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "D:\\Project\\RecordopsSystem\\RecordOpsApi\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "RecordOpsApi\\Controllers\\CustomerController.cs",
+              "ToolTip": "D:\\Project\\RecordopsSystem\\RecordOpsApi\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "RecordOpsApi\\Controllers\\CustomerController.cs",
+              "ViewState": "AgIAAJgAAAAAAAAAAIAwwKIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T11:13:34.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomerRepository.cs",
+              "DocumentMoniker": "D:\\Project\\RecordopsSystem\\RecordOpsApi\\Repositories\\CustomerRepository.cs",
+              "RelativeDocumentMoniker": "RecordOpsApi\\Repositories\\CustomerRepository.cs",
+              "ToolTip": "D:\\Project\\RecordopsSystem\\RecordOpsApi\\Repositories\\CustomerRepository.cs",
+              "RelativeToolTip": "RecordOpsApi\\Repositories\\CustomerRepository.cs",
+              "ViewState": "AgIAAI4AAAAAAAAAAADwv50AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T14:45:53.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MDistrict.cs",
+              "DocumentMoniker": "D:\\Project\\RecordopsSystem\\RecordOpsApi\\Models\\MDistrict.cs",
+              "RelativeDocumentMoniker": "RecordOpsApi\\Models\\MDistrict.cs",
+              "ToolTip": "D:\\Project\\RecordopsSystem\\RecordOpsApi\\Models\\MDistrict.cs",
+              "RelativeToolTip": "RecordOpsApi\\Models\\MDistrict.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T15:09:59.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MProvince.cs",
+              "DocumentMoniker": "D:\\Project\\RecordopsSystem\\RecordOpsApi\\Models\\MProvince.cs",
+              "RelativeDocumentMoniker": "RecordOpsApi\\Models\\MProvince.cs",
+              "ToolTip": "D:\\Project\\RecordopsSystem\\RecordOpsApi\\Models\\MProvince.cs",
+              "RelativeToolTip": "RecordOpsApi\\Models\\MProvince.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T15:10:18.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MCustomer.cs",
+              "DocumentMoniker": "D:\\Project\\RecordopsSystem\\RecordOpsApi\\Models\\MCustomer.cs",
+              "RelativeDocumentMoniker": "RecordOpsApi\\Models\\MCustomer.cs",
+              "ToolTip": "D:\\Project\\RecordopsSystem\\RecordOpsApi\\Models\\MCustomer.cs",
+              "RelativeToolTip": "RecordOpsApi\\Models\\MCustomer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T15:10:58.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CreateViewModel.cs",
+              "DocumentMoniker": "D:\\Project\\RecordopsSystem\\RecordOps\\ViewModels\\CreateViewModel.cs",
+              "RelativeDocumentMoniker": "RecordOps\\ViewModels\\CreateViewModel.cs",
+              "ToolTip": "D:\\Project\\RecordopsSystem\\RecordOps\\ViewModels\\CreateViewModel.cs",
+              "RelativeToolTip": "RecordOps\\ViewModels\\CreateViewModel.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA7wBMAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T14:48:49.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Project\\RecordopsSystem\\RecordOps\\Views\\Home\\Create.cshtml",
+              "RelativeDocumentMoniker": "RecordOps\\Views\\Home\\Create.cshtml",
+              "ToolTip": "D:\\Project\\RecordopsSystem\\RecordOps\\Views\\Home\\Create.cshtml",
+              "RelativeToolTip": "RecordOps\\Views\\Home\\Create.cshtml",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAlwFUAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-19T11:45:58.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Project\\RecordopsSystem\\RecordOps\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "RecordOps\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Project\\RecordopsSystem\\RecordOps\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "RecordOps\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAlwEcAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T11:45:24.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CustomerViewModel.cs",
+              "DocumentMoniker": "D:\\Project\\RecordopsSystem\\RecordOps\\ViewModels\\CustomerViewModel.cs",
+              "RelativeDocumentMoniker": "RecordOps\\ViewModels\\CustomerViewModel.cs",
+              "ToolTip": "D:\\Project\\RecordopsSystem\\RecordOps\\ViewModels\\CustomerViewModel.cs",
+              "RelativeToolTip": "RecordOps\\ViewModels\\CustomerViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T11:45:55.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\Project\\RecordopsSystem\\RecordOps\\Views\\Home\\Delete.cshtml",
               "RelativeDocumentMoniker": "RecordOps\\Views\\Home\\Delete.cshtml",
               "ToolTip": "D:\\Project\\RecordopsSystem\\RecordOps\\Views\\Home\\Delete.cshtml",
               "RelativeToolTip": "RecordOps\\Views\\Home\\Delete.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-13T02:49:21.687Z",
+              "WhenOpened": "2025-01-19T15:00:29.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Project\\RecordopsSystem\\RecordOps\\Views\\Home\\Edit.cshtml",
+              "RelativeDocumentMoniker": "RecordOps\\Views\\Home\\Edit.cshtml",
+              "ToolTip": "D:\\Project\\RecordopsSystem\\RecordOps\\Views\\Home\\Edit.cshtml",
+              "RelativeToolTip": "RecordOps\\Views\\Home\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-19T15:00:32.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Project\\RecordopsSystem\\RecordOps\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "RecordOps\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Project\\RecordopsSystem\\RecordOps\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "RecordOps\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAACsAAAAAAAAAAAAAADkAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-19T15:00:33.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "D:\\Project\\RecordopsSystem\\RecordOps\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "RecordOps\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "D:\\Project\\RecordopsSystem\\RecordOps\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "RecordOps\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-19T15:00:34.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DistrictModel.cs",
+              "DocumentMoniker": "D:\\Project\\RecordopsSystem\\RecordOps\\Models\\DistrictModel.cs",
+              "RelativeDocumentMoniker": "RecordOps\\Models\\DistrictModel.cs",
+              "ToolTip": "D:\\Project\\RecordopsSystem\\RecordOps\\Models\\DistrictModel.cs",
+              "RelativeToolTip": "RecordOps\\Models\\DistrictModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T11:45:51.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CustomerModel.cs",
+              "DocumentMoniker": "D:\\Project\\RecordopsSystem\\RecordOps\\Models\\CustomerModel.cs",
+              "RelativeDocumentMoniker": "RecordOps\\Models\\CustomerModel.cs",
+              "ToolTip": "D:\\Project\\RecordopsSystem\\RecordOps\\Models\\CustomerModel.cs",
+              "RelativeToolTip": "RecordOps\\Models\\CustomerModel.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA0wAsAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T11:45:45.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "RecordOps",
+              "DocumentMoniker": "D:\\Project\\RecordopsSystem\\RecordOps\\RecordOps.csproj",
+              "RelativeDocumentMoniker": "RecordOps\\RecordOps.csproj",
+              "ToolTip": "D:\\Project\\RecordopsSystem\\RecordOps\\RecordOps.csproj",
+              "RelativeToolTip": "RecordOps\\RecordOps.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-19T11:11:50.895Z",
               "EditorCaption": ""
             }
           ]

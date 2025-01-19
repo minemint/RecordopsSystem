@@ -82,7 +82,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "integer",
+              "format": "int32"
             }
           }
         ],
@@ -114,6 +115,100 @@
     },
     "/api/Customer/DeleteCustomer/{id}": {
       "delete": {
+        "tags": [
+          "Customer"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Customer/GetCustomersWithStoreP": {
+      "get": {
+        "tags": [
+          "Customer"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Customer/GetDistricts": {
+      "get": {
+        "tags": [
+          "Customer"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Customer/GetSubdistricts": {
+      "get": {
+        "tags": [
+          "Customer"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Customer/GetProvinces": {
+      "get": {
+        "tags": [
+          "Customer"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Customer/GetSubdistrictsWithDistrict/{id}": {
+      "get": {
+        "tags": [
+          "Customer"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Customer/GetdistrictsWithProvince/{id}": {
+      "get": {
         "tags": [
           "Customer"
         ],
@@ -201,28 +296,23 @@
             "type": "string",
             "nullable": true
           },
-          "customerProvince": {
-            "type": "string",
-            "nullable": true
-          },
-          "districtId": {
+          "provinceCode": {
             "type": "integer",
             "format": "int32",
             "nullable": true
           },
-          "subdistrictId": {
+          "districtCode": {
             "type": "integer",
             "format": "int32",
             "nullable": true
           },
-          "customerPostalCode": {
+          "subdistrictCode": {
             "type": "integer",
             "format": "int32",
             "nullable": true
           },
           "customerPhone": {
-            "type": "integer",
-            "format": "int32",
+            "type": "string",
             "nullable": true
           },
           "customerImage": {
@@ -234,6 +324,9 @@
           },
           "subdistrict": {
             "$ref": "#/components/schemas/MSubdistrict"
+          },
+          "province": {
+            "$ref": "#/components/schemas/MProvince"
           }
         },
         "additionalProperties": false
@@ -246,7 +339,52 @@
             "format": "int32",
             "nullable": true
           },
-          "districtName": {
+          "districtCode": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "districtNameEn": {
+            "type": "string",
+            "nullable": true
+          },
+          "districtNameTh": {
+            "type": "string",
+            "nullable": true
+          },
+          "postalCode": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "provinceCode": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "province": {
+            "$ref": "#/components/schemas/MProvince"
+          }
+        },
+        "additionalProperties": false
+      },
+      "MProvince": {
+        "type": "object",
+        "properties": {
+          "provinceId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "provinceCode": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "provinceNameEn": {
+            "type": "string",
+            "nullable": true
+          },
+          "provinceNameTh": {
             "type": "string",
             "nullable": true
           }
@@ -261,9 +399,39 @@
             "format": "int32",
             "nullable": true
           },
-          "subdistrictName": {
+          "provinceCode": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "districtCode": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "subdistrictCode": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "subdistrictNameEn": {
             "type": "string",
             "nullable": true
+          },
+          "subdistrictNameTh": {
+            "type": "string",
+            "nullable": true
+          },
+          "postalCode": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "district": {
+            "$ref": "#/components/schemas/MDistrict"
+          },
+          "province": {
+            "$ref": "#/components/schemas/MProvince"
           }
         },
         "additionalProperties": false

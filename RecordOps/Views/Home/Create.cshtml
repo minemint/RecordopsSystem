@@ -22,27 +22,27 @@
                             </div>
                             <div class="card-body">
                                 <div class="mb-3">
-                                    <label asp-for="CustomerTitleName" class="form-label">Title</label>
-                                    <input asp-for="CustomerTitleName" class="form-control" placeholder="Enter title" />
-                                    <span asp-validation-for="CustomerTitleName" class="text-danger"></span>
+                                    <label asp-for="customerTitleName" class="form-label">Title</label> 
+                                    <input asp-for="customerTitleName" class="form-control" placeholder="Enter title" />
+                                    <span asp-validation-for="customerTitleName" class="text-danger"></span>
                                 </div>
 
                                 <div class="mb-3">
-                                    <label asp-for="CustomerFName" class="form-label">First Name</label>
-                                    <input asp-for="CustomerFName" class="form-control" placeholder="Enter first name" />
-                                    <span asp-validation-for="CustomerFName" class="text-danger"></span>
+                                     <label asp-for="customerFName" class="form-label">First Name</label> 
+                                     <input asp-for="customerFName" class="form-control" placeholder="Enter first name" /> 
+                                     <span asp-validation-for="customerFName" class="text-danger"></span> 
                                 </div>
 
                                 <div class="mb-3">
-                                    <label asp-for="CustomerLName" class="form-label">Last Name</label>
-                                    <input asp-for="CustomerLName" class="form-control" placeholder="Enter last name" />
-                                    <span asp-validation-for="CustomerLName" class="text-danger"></span>
+                                    <label asp-for="customerLName" class="form-label">Last Name</label>
+                                     <input asp-for="customerLName" class="form-control" placeholder="Enter last name" /> 
+                                    <span asp-validation-for="customerLName" class="text-danger"></span> 
                                 </div>
 
                                 <div class="mb-3">
-                                    <label asp-for="CustomerPhone" class="form-label">Phone Number</label>
-                                    <input asp-for="CustomerPhone" class="form-control" placeholder="Enter phone number" />
-                                    <span asp-validation-for="CustomerPhone" class="text-danger"></span>
+                                    <label asp-for="customerPhone" class="form-label">Phone Number</label>
+                                    <input asp-for="customerPhone" class="form-control" placeholder="Enter phone number" />
+                                    <span asp-validation-for="customerPhone" class="text-danger"></span>
                                 </div>
                             </div>
                         </div>
@@ -56,41 +56,45 @@
                             </div>
                             <div class="card-body">
                                 <div class="mb-3">
-                                    <label asp-for="CustomerAddress" class="form-label">Address</label>
-                                    <input asp-for="CustomerAddress" class="form-control" placeholder="Enter address" />
-                                    <span asp-validation-for="CustomerAddress" class="text-danger"></span>
+                                     <label asp-for="customerAddress" class="form-label">Address</label> 
+                                     <input asp-for="customerAddress" class="form-control" placeholder="Enter address" /> 
+                                    <span asp-validation-for="customerAddress" class="text-danger"></span> 
                                 </div>
 
                                 <div class="mb-3">
-                                    <label asp-for="CustomerProvince" class="form-label">Province</label>
-                                    <input asp-for="CustomerProvince" class="form-control" placeholder="Enter province" />
-                                    <span asp-validation-for="CustomerProvince" class="text-danger"></span>
-                                </div>
-
-                                <div class="mb-3">
-                                    <label asp-for="DistrictId" class="form-label">District</label>
-                                    <select asp-for="DistrictId" class="form-select">
-                                        <option value="">Select District</option>
-                                        <option value="1">Thon Buri</option>
-                                        <option value="2">Bang Rak</option>
+                                    <label asp-for="provinceCode" class="form-label">Province</label>
+                                    <select asp-for="provinceCode" class="form-select" id="province-dropdown">
+                                        <option value="">-- กรุณาเลือกเขต --</option>
+                                        @foreach (var province in ViewBag.Provinces as SelectList)
+                                        {
+                                            <option value="@province.Value">@province.Text</option>
+                                        }
                                     </select>
-                                    <span asp-validation-for="DistrictId" class="text-danger"></span>
+                                    <span asp-validation-for="provinceCode" class="text-danger"></span>
                                 </div>
 
                                 <div class="mb-3">
-                                    <label asp-for="SubdistrictId" class="form-label">Subdistrict</label>
-                                    <select asp-for="SubdistrictId" class="form-select">
-                                        <option value="">Select Subdistrict</option>
-                                        <option value="1">Anusawari</option>
-                                        <option value="2">Silom</option>
+                                     <label asp-for="districtCode" class="form-label">District</label> 
+                                    <select asp-for="districtCode" class="form-select" id="district-dropdown">
+                                        <option value="">-- กรุณาเลือกเขต --</option>
+                                        @foreach (var district in ViewBag.Districts as SelectList)
+                                        {
+                                            <option value="@district.Value">@district.Text</option>
+                                        }
                                     </select>
-                                    <span asp-validation-for="SubdistrictId" class="text-danger"></span>
+                                    <span asp-validation-for="districtCode" class="text-danger"></span>
                                 </div>
 
                                 <div class="mb-3">
-                                    <label asp-for="CustomerPostalCode" class="form-label">Postal Code</label>
-                                    <input asp-for="CustomerPostalCode" class="form-control" placeholder="Enter postal code" />
-                                    <span asp-validation-for="CustomerPostalCode" class="text-danger"></span>
+                                    <label asp-for="subdistrictCode" class="form-label">Subdistrict</label>
+                                    <select asp-for="subdistrictCode" class="form-select" id="district-dropdown">
+                                        <option value="">-- กรุณาเลือกเขต --</option>
+                                        @foreach (var subdistrict in ViewBag.Subdistricts as SelectList)
+                                        {
+                                            <option value="@subdistrict.Value">@subdistrict.Text</option>
+                                        }
+                                    </select>
+                                    <span asp-validation-for="subdistrictCode" class="text-danger"></span>
                                 </div>
                             </div>
                         </div>

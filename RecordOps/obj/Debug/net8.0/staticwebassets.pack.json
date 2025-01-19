@@ -245,8 +245,20 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\uploads\\83235d70-2b3e-409b-a0b1-fdb2a5b902f7.jpg",
+      "PackagePath": "staticwebassets\\uploads\\83235d70-2b3e-409b-a0b1-fdb2a5b902f7.jpg"
+    },
+    {
       "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\uploads\\ba74e89d-3a1e-41a8-9ba1-1b6bd2e21716.jpg",
       "PackagePath": "staticwebassets\\uploads\\ba74e89d-3a1e-41a8-9ba1-1b6bd2e21716.jpg"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\uploads\\cf47125e-4c17-4b15-9254-daf142d4497a.png",
+      "PackagePath": "staticwebassets\\uploads\\cf47125e-4c17-4b15-9254-daf142d4497a.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\uploads\\def0d101-7d33-4a52-b9d8-42e431020853.jpg",
+      "PackagePath": "staticwebassets\\uploads\\def0d101-7d33-4a52-b9d8-42e431020853.jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.RecordOps.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
