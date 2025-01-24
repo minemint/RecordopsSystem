@@ -4,7 +4,6 @@
 @{
     ViewData["Title"] = "Create Customer";
 }
-
 <div class="container p-4">
     <div class="card shadow-sm">
         <div class="card-header bg-light">
@@ -23,7 +22,12 @@
                             <div class="card-body">
                                 <div class="mb-3">
                                     <label asp-for="customerTitleName" class="form-label">Title</label> 
-                                    <input asp-for="customerTitleName" class="form-control" placeholder="Enter title" />
+                                    <select asp-for="customerTitleName" class="form-select">
+                                        <option value="">-- กรุณาเลือกคำนำหน้า --</option>
+                                        <option value="Mr.">Mr.</option>
+                                        <option value="Mrs.">Mrs.</option>
+                                        <option value="Miss">Miss</option>
+                                    </select>
                                     <span asp-validation-for="customerTitleName" class="text-danger"></span>
                                 </div>
 
@@ -62,21 +66,22 @@
                                 </div>
 
                                 <div class="mb-3">
-                                    <label asp-for="provinceCode" class="form-label">Province</label>
-                                    <select asp-for="provinceCode" class="form-select" id="province-dropdown">
-                                        <option value="">-- กรุณาเลือกเขต --</option>
-                                        @foreach (var province in ViewBag.Provinces as SelectList)
-                                        {
-                                            <option value="@province.Value">@province.Text</option>
-                                        }
-                                    </select>
-                                    <span asp-validation-for="provinceCode" class="text-danger"></span>
+                                        <label asp-for="provinceCode" class="form-label">Province</label>
+                                        <select asp-for="provinceCode" class="form-select" id="province-dropdown">
+                                            <option value="">-- กรุณาเลือกจังหวัด --</option>
+                                            @foreach (var province in ViewBag.Provinces as SelectList)
+                                            {
+                                            <option asp-action="Create" value="@province.Value">@province.Text</option>
+                                            }
+                                        </select>
+                                        <span asp-validation-for="provinceCode" class="text-danger"></span>
                                 </div>
 
+                                <!-- District Dropdown -->
                                 <div class="mb-3">
-                                     <label asp-for="districtCode" class="form-label">District</label> 
+                                    <label asp-for="districtCode" class="form-label">District</label>
                                     <select asp-for="districtCode" class="form-select" id="district-dropdown">
-                                        <option value="">-- กรุณาเลือกเขต --</option>
+                                        <option value="">-- กรุณาเลือกอำเภอ --</option>
                                         @foreach (var district in ViewBag.Districts as SelectList)
                                         {
                                             <option value="@district.Value">@district.Text</option>
@@ -85,10 +90,11 @@
                                     <span asp-validation-for="districtCode" class="text-danger"></span>
                                 </div>
 
+                                <!-- Subdistrict Dropdown -->
                                 <div class="mb-3">
                                     <label asp-for="subdistrictCode" class="form-label">Subdistrict</label>
-                                    <select asp-for="subdistrictCode" class="form-select" id="district-dropdown">
-                                        <option value="">-- กรุณาเลือกเขต --</option>
+                                    <select asp-for="subdistrictCode" class="form-select" id="subdistrict-dropdown">
+                                        <option value="">-- กรุณาเลือกตำบล --</option>
                                         @foreach (var subdistrict in ViewBag.Subdistricts as SelectList)
                                         {
                                             <option value="@subdistrict.Value">@subdistrict.Text</option>
@@ -99,18 +105,18 @@
                             </div>
                         </div>
                     </div>
-
+                    <!-- End Address Section -->
                     <!-- Image Upload Section -->
-                    <div class="col-12">
+                    <div class="col-md-6">
                         <div class="card">
                             <div class="card-header bg-light">
                                 <h6 class="mb-0">Profile Image</h6>
                             </div>
                             <div class="card-body">
                                 <div class="mb-3">
-                                    <label asp-for="CustomerImage" class="form-label">Upload Image</label>
-                                    <input type="file" asp-for="CustomerImage" name="file" class="form-control" />
-                                    <span asp-validation-for="CustomerImage" class="text-danger"></span>
+                                    <label asp-for="customerImageFile" class="form-label">Upload Image</label>
+                                    <input type="file" asp-for="customerImageFile" name="file" class="form-control" />
+                                    <span asp-validation-for="customerImageFile" class="text-danger"></span>
                                 </div>
                             </div>
                         </div>
@@ -169,4 +175,87 @@
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // เมื่อ dropdown จังหวัด ถูกเปลี่ยนค่า
+            $('#province-dropdown').change(function () {
+                // รับค่าจาก option ที่ถูกเลือก
+                var selectedProvince = $(this).val();
+
+                if (selectedProvince) {
+                    // ส่งค่าไปยัง Controller เพื่อดึงข้อมูลเขต (District)
+                    $.ajax({
+                        url: '/Home/GetDistrict',  // เปลี่ยนเป็น URL ของคุณ
+                        type: 'GET',
+                        data: { provinceCode: selectedProvince },  // ส่งค่า provinceId
+                        success: function (districts) {
+                            console.log(districts);
+                            // เคลียร์ข้อมูลเดิมใน dropdown ของ District
+                            $('#district-dropdown').empty();
+                            $('#district-dropdown').append('<option value="">-- กรุณาเลือกอำเภอ --</option>');
+
+                            // เติมข้อมูลที่ได้จาก Controller ลงใน dropdown
+                            $.each(districts, function (index, district) {
+                                $('#district-dropdown').append('<option value="' + district.value + '">' + district.text + '</option>');
+                            });
+                        },
+                        error: function (xhr, status, error) {
+                            console.error('Error fetching districts: ' + error);
+                        }
+                    });
+
+                    // ส่งค่าไปยัง Controller เพื่อดึงข้อมูลตำบล (Subdistrict)
+                    $.ajax({
+                                url: '/Home/Getsubdistrict',  // เปลี่ยนเป็น URL ของคุณ
+                        type: 'GET',
+                        data: { provinceCode: selectedProvince },
+                        success: function (subdistricts) {
+                            //console.log(subdistricts);
+                            // เคลียร์ข้อมูลเดิมใน dropdown ของ Subdistrict
+                            $('#subdistrict-dropdown').empty();
+                            $('#subdistrict-dropdown').append('<option value="">-- กรุณาเลือกตำบล --</option>');
+
+                            // เติมข้อมูลที่ได้จาก Controller ลงใน dropdown
+                            $.each(subdistricts, function (index, subdistrict) {
+                                //console.log(subdistrict.Text);
+                                $('#subdistrict-dropdown').append('<option value="' + subdistrict.value + '">' + subdistrict.text + '</option>');
+                            });
+                        },
+                        error: function (xhr, status, error) {
+                            console.error('Error fetching subdistricts: ' + error);
+                        }
+                    });
+                } else {
+                    // ถ้าไม่เลือกจังหวัด ให้ล้างข้อมูลใน dropdown
+                    $('#district-dropdown').empty().append('<option value="">-- กรุณาเลือกอำเภอ --</option>');
+                    $('#subdistrict-dropdown').empty().append('<option value="">-- กรุณาเลือกตำบล --</option>');
+                }
+            });
+            $('#district-dropdown').change(function () {
+                var selectedDistrict = $(this).val();
+                if (selectedDistrict) {
+                    $.ajax({
+                        url: '/Home/Getsubdistrict',
+                        type: 'GET',
+                        data: { districtCode: selectedDistrict },
+                        success: function (subdistricts) {
+                            console.log(subdistricts);
+                            $('#subdistrict-dropdown').empty();
+                            $('#subdistrict-dropdown').append('<option value="">-- กรุณาเลือกตำบล --</option>');
+                            $.each(subdistricts, function (index, subdistrict) {
+                                $('#subdistrict-dropdown').append('<option value="' + subdistrict.value + '">' + subdistrict.text + '</option>');
+                            });
+                        },
+                        error: function (xhr, status, error) {
+                            console.error('Error fetching subdistricts: ' + error);
+                        }
+                    });
+                } else {
+                    $('#subdistrict-dropdown').empty().append('<option value="">-- กรุณาเลือกตำบล --</option>');
+                }
+            });
+        });
+    </script>
+
 }

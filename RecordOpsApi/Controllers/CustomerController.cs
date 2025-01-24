@@ -103,6 +103,18 @@ namespace RecordOpsApi.Controllers
             return Ok(customers);
         }
         [HttpGet]
+        [Route("GetProvinces")]
+        public async Task<IActionResult> GetProvinces()
+        {
+            var provinces = await _customerRepository.GetProvinces();
+            if (provinces == null)
+            {
+                responseMessage = "ไม่พบข้อมูลจังหวัด";
+                return NotFound(responseMessage);
+            }
+            return Ok(provinces);
+        }
+        [HttpGet]
         [Route("GetDistricts")]
         public async Task<IActionResult> GetDistricts()
         {
@@ -127,16 +139,30 @@ namespace RecordOpsApi.Controllers
             return Ok(subdistricts);
         }
         [HttpGet]
-        [Route("GetProvinces")]
-        public async Task<IActionResult> GetProvinces()
+        [Route("GetProvinceWithProvinceCode/{id}")]
+        public async Task<IActionResult> GetProvinceWithProvinceCode(int id)
         {
-            var provinces = await _customerRepository.GetProvinces();
-            if (provinces == null)
+            var districts = await _customerRepository.GetProvinceWithProvinceCode(id);
+            if (districts == null)
             {
                 responseMessage = "ไม่พบข้อมูลจังหวัด";
                 return NotFound(responseMessage);
             }
-            return Ok(provinces);
+            return Ok(districts);
+
+        }
+        [HttpGet]
+        [Route("GetDistrictsWithProvince/{id}")]
+        public async Task<IActionResult> GetdistrictsWithProvince(int id)
+        {
+            var districts = await _customerRepository.GetDistrictsWithProvince(id);
+            if (districts == null)
+            {
+                responseMessage = "ไม่พบข้อมูลแขวง";
+                return NotFound(responseMessage);
+            }
+            return Ok(districts);
+
         }
         [HttpGet]
         [Route("GetSubdistrictsWithDistrict/{id}")]
@@ -150,18 +176,6 @@ namespace RecordOpsApi.Controllers
             }
             return Ok(subdistricts);
         }
-        [HttpGet]
-        [Route("GetdistrictsWithProvince/{id}")]
-        public async Task<IActionResult> GetdistrictsWithProvince(int id)
-        {
-            var districts = await _customerRepository.GetDistrictsWithProvince(id);
-            if (districts == null)
-            {
-                responseMessage = "ไม่พบข้อมูลแขวง";
-                return NotFound(responseMessage);
-            }
-            return Ok(districts);
-
-        }
+        
     }
 }

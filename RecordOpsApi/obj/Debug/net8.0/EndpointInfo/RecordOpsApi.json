@@ -148,6 +148,18 @@
         }
       }
     },
+    "/api/Customer/GetProvinces": {
+      "get": {
+        "tags": [
+          "Customer"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Customer/GetDistricts": {
       "get": {
         "tags": [
@@ -172,19 +184,7 @@
         }
       }
     },
-    "/api/Customer/GetProvinces": {
-      "get": {
-        "tags": [
-          "Customer"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/Customer/GetSubdistrictsWithDistrict/{id}": {
+    "/api/Customer/GetProvinceWithProvinceCode/{id}": {
       "get": {
         "tags": [
           "Customer"
@@ -207,7 +207,30 @@
         }
       }
     },
-    "/api/Customer/GetdistrictsWithProvince/{id}": {
+    "/api/Customer/GetDistrictsWithProvince/{id}": {
+      "get": {
+        "tags": [
+          "Customer"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Customer/GetSubdistrictsWithDistrict/{id}": {
       "get": {
         "tags": [
           "Customer"

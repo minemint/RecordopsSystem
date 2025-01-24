@@ -80,7 +80,7 @@
   {
     "ContainingType": "RecordOpsApi.Controllers.CustomerController",
     "Method": "GetdistrictsWithProvince",
-    "RelativePath": "api/Customer/GetdistrictsWithProvince/{id}",
+    "RelativePath": "api/Customer/GetDistrictsWithProvince/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -101,6 +101,22 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RecordOpsApi.Controllers.CustomerController",
+    "Method": "GetProvinceWithProvinceCode",
+    "RelativePath": "api/Customer/GetProvinceWithProvinceCode/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {

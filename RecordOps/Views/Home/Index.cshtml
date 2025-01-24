@@ -55,10 +55,11 @@
                     </td>
                     <td>
                         @Html.DisplayFor(modelItem => item.customerAddress)
-                        @Html.DisplayFor(modelItem => item.districtNameTh)
-                        @Html.DisplayFor(modelItem => item.provinceNameTh)
-                        @Html.DisplayFor(modelItem => item.subdistrictNameTh)
-                        @Html.DisplayFor(modelItem => item.postalCode)
+
+                        @Html.DisplayFor(modelItem => item.district.districtNameTh)
+                        @Html.DisplayFor(modelItem => item.subdistrict.subdistrictNameTh)
+                        @Html.DisplayFor(modelItem => item.province.provinceNameTh)
+                        @Html.DisplayFor(modelItem => item.subdistrict.postalCode)
                     </td>
                     <td>
                         @Html.DisplayFor(modelItem => item.customerPhone)

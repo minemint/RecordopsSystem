@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using RecordOpsApi;
 using RecordOpsApi.Repositories;
 using RecordOpsApi.Repositories.Interfaces;
@@ -26,6 +27,7 @@ builder.Services.AddCors(options =>
     policy =>
     {
         policy.WithOrigins(
+            //เปิดเฉพาะ domain ที่ต้องการให้เข้าถึง API
             "*"
         )
         .SetIsOriginAllowedToAllowWildcardSubdomains()
@@ -44,6 +46,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+
 
 app.UseAuthorization();
 

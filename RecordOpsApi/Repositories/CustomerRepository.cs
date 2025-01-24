@@ -119,6 +119,28 @@ namespace RecordOpsApi.Repositories
                 throw new Exception("ไม่สามารถดึงข้อมูลลูกค้าได้", ex);
             }
         }
+        public async Task<IEnumerable<MProvince>> GetProvinces()
+        {
+            try
+            {
+                var provinces = _memoryCache.Get<IEnumerable<MProvince>>("Provinces");
+                if (provinces == null)
+                {
+                    //store procedure
+                    provinces = await _context.province_tbl.ToListAsync();
+                    _memoryCache.Set("Provinces", provinces, new MemoryCacheEntryOptions
+                    {
+                        AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(5)
+                    });
+                }
+                return provinces;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"เกิดข้อผิดพลาดขณะดึงข้อมูลจังหวัด: {ex.Message}");
+                throw new Exception("ไม่สามารถดึงข้อมูลจังหวัดได้", ex);
+            }
+        }
 
         public async Task<IEnumerable<MDistrict>> GetDistricts()
         {
@@ -146,40 +168,12 @@ namespace RecordOpsApi.Repositories
 
         public async Task<IEnumerable<MDistrict>> GetDistrictsWithProvince(int id)
         {
-            var districts = _memoryCache.Get<IEnumerable<MDistrict>>("Districts");
-            if (districts == null)
-            {
-                districts = await _context.district_tbl.Include(d => d.province).Where(d => d.provinceCode == id).ToListAsync();
-                _memoryCache.Set("Districts", districts, new MemoryCacheEntryOptions
-                {
-                    AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(5)
-                });
-            }
-            return districts;
+
+            var districtsWithProvince = await _context.district_tbl.Include(d => d.province).Where(d => d.provinceCode == id).ToListAsync();
+
+            return districtsWithProvince;
         }
 
-        public async Task<IEnumerable<MProvince>> GetProvinces()
-        {
-            try
-            {
-                var provinces = _memoryCache.Get<IEnumerable<MProvince>>("Provinces");
-                if (provinces == null)
-                {
-                    //store procedure
-                    provinces = await _context.province_tbl.ToListAsync();
-                    _memoryCache.Set("Provinces", provinces, new MemoryCacheEntryOptions
-                    {
-                        AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(5)
-                    });
-                }
-                return provinces;
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"เกิดข้อผิดพลาดขณะดึงข้อมูลจังหวัด: {ex.Message}");
-                throw new Exception("ไม่สามารถดึงข้อมูลจังหวัดได้", ex);
-            }
-        }
         public async Task<IEnumerable<MSubdistrict>> GetSubdistricts()
         {
             try
@@ -204,16 +198,10 @@ namespace RecordOpsApi.Repositories
 
         public async Task<IEnumerable<MSubdistrict>> GetSubdistrictsWithDistrict(int id)
         {
-            var subdistricts = _memoryCache.Get<IEnumerable<MSubdistrict>>("Subdistricts");
-            if (subdistricts == null)
-            {
-                subdistricts = await _context.subdistrict_tbl.Include(s => s.district).Where(s => s.districtCode == id).ToListAsync();
-                _memoryCache.Set("Subdistricts", subdistricts, new MemoryCacheEntryOptions
-                {
-                    AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(5)
-                });
-            }
-            return subdistricts;
+            
+               var subdistrictsWithDistrict = await _context.subdistrict_tbl.Include(s => s.district).Where(s => s.districtCode == id).ToListAsync();
+
+            return subdistrictsWithDistrict;
 
         }
 
@@ -243,6 +231,13 @@ namespace RecordOpsApi.Repositories
                 Console.WriteLine($"เกิดข้อผิดพลาดขณะอัพเดทข้อมูลลูกค้า: {ex.Message}");
                 throw new Exception("ไม่สามารถอัพเดทข้อมูลลูกค้าได้", ex);
             }
+        }
+
+        public async Task<IEnumerable<MProvince>> GetProvinceWithProvinceCode(int id)
+        {
+            var provinceWithProvinceCode = await _context.province_tbl.Where(d => d.provinceCode == id).ToListAsync();
+
+            return provinceWithProvinceCode;
         }
     }
 }
