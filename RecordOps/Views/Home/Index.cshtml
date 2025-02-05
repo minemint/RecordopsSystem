@@ -1,15 +1,29 @@
 ﻿@model IEnumerable<RecordOps.ViewModels.CustomerViewModel>
+
 @{
     ViewData["Title"] = "Index";
 }
-
+<div hidden class="bs-toast toast fade show bg-primary" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+        <i class='bx bx-bell me-2'></i>
+        <div class="me-auto fw-medium">Bootstrap</div>
+        <small>11 mins ago</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+        Fruitcake chocolate bar tootsie roll gummies gummies jelly beans cake.
+    </div>
+</div>
 <div class="container p-4">
     <div class="d-flex justify-content-between align-items-center mb-4">
         <div class="search-container">
-           <div class="d-flex gap-2">
+            <div class="d-flex gap-2">
                 <input type="text" class="form-control" placeholder="Search table" style="width: 300px;">
-                <a class="btn btn-sm btn-outline-primary" asp-action="Create" style="width: 100px">Create </a>
-           </div>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#backDropModal">
+                    <i class='bx bx-plus'></i>
+                </button>
+
+            </div>
         </div>
         <div class="controls">
             <select class="form-select d-inline-block" style="width: 70px;">
@@ -20,90 +34,317 @@
             </select>
         </div>
     </div>
-
-    <table class="table table-hover"> 
-        <thead class="bg-light">
-            <tr>
-                <th hidden>
-                </th>
-                <th>
-                    Name
-                </th>
-                <th>
-                    Address
-                </th>
-                <th>
-                    Phone
-                </th>
-                <th>
-                    Image
-                </th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model)
-            {
-                <tr>
-                    <td hidden>
-                        @Html.DisplayFor(modelItem => item.customerId)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.customerTitleName)
-                        @Html.DisplayFor(modelItem => item.customerFName)
-                        @Html.DisplayFor(modelItem => item.customerLName)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.customerAddress)
-
-                        @Html.DisplayFor(modelItem => item.district.districtNameTh)
-                        @Html.DisplayFor(modelItem => item.subdistrict.subdistrictNameTh)
-                        @Html.DisplayFor(modelItem => item.province.provinceNameTh)
-                        @Html.DisplayFor(modelItem => item.subdistrict.postalCode)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.customerPhone)
-                    </td>
-                    <td>
-                        <img src="~/uploads/@Html.DisplayFor(modelItem => item.customerImage)" alt="Customer Image" width="120" height="120" />
-                    </td>
-                    <td>
-                        <div class="d-flex gap-2">
-                            <a asp-action="Edit" asp-route-id="@item.customerId" class="btn btn-sm btn-outline-primary">Edit</a>
-                            <a asp-action="Delete" asp-route-id="@item.customerId" class="btn btn-sm btn-outline-danger">Delete</a>
-                        </div>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
 </div>
 
-<style>
-    .table th {
-        font-size: 0.85rem;
-        font-weight: 600;
-        border-bottom: 2px solid #e9ecef;
-    }
+<div class="card">
+    <h5 class="card-header">Bordered Table</h5>
+    <div class="card-body">
+        <div class="table-responsive text-nowrap">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th hidden>
+                        </th>
+                        <th ">
+                            ชื่อ-นามสกุล
+                        </th>
+                        <th>
+                            ที่อยู่
+                        </th>
+                        <th>
+                            เบอร์โทรศัพท์
+                        </th>
+                        <th>
+                            รูปภาพ
+                        </th>
+                        <th>
+                        </th>
+                        <th>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                        @foreach (var item in Model)
+                        {
+                        <tr>
+                            <td hidden>
+                                    @Html.DisplayFor(modelItem => item.customerId)
+                            </td>
+                            <td>
+                                    @Html.DisplayFor(modelItem => item.customerTitleName)
+                                    @Html.DisplayFor(modelItem => item.customerFName)
+                                    @Html.DisplayFor(modelItem => item.customerLName)
+                            </td>
+                            <td>
+                                    @Html.DisplayFor(modelItem => item.customerAddress)
 
-    .table td {
-        vertical-align: middle;
-        padding: 1rem 0.75rem;
-    }
+                                    @Html.DisplayFor(modelItem => item.district.districtNameTh)
+                                    @Html.DisplayFor(modelItem => item.subdistrict.subdistrictNameTh)
+                                    @Html.DisplayFor(modelItem => item.province.provinceNameTh)
+                                    @Html.DisplayFor(modelItem => item.subdistrict.postalCode)
+                            </td>
+                            <td>
+                                    @Html.DisplayFor(modelItem => item.customerPhone)
+                            </td>
+                            <td>
+                                <img src="@string.Format("/uploads/{0}", item.customerImage)" alt="Customer Image" width="120" height="120" />
+                            </td>
+                            <td>
+                                <div class="d-flex gap-2">
+                                    <a asp-action="Edit" asp-route-id="@item.customerId" class="btn btn-sm btn-outline-primary">Edit</a>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editModal">
+                                        <i class='bx bx-plus'></i>
+                                    </button>
+                                    <a asp-action="Delete" asp-route-id="@item.customerId" class="btn btn-sm btn-outline-danger">Delete</a>
 
-    .search-container input {
-        padding: 0.5rem 1rem;
-        border: 1px solid #dee2e6;
-        border-radius: 4px;
-    }
+                                </div>
+                            </td>
+                        </tr>
+                        }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
 
-    .form-select {
-        padding: 0.5rem;
-        border: 1px solid #dee2e6;
-        border-radius: 4px;
-    }
+<div class="col-lg-4 col-md-3">
+    <div class="mt-4">
+        <div class="modal fade" id="backDropModal" data-bs-backdrop="static" tabindex="-1">
+            <div class="modal-dialog">
+                <form class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="backDropModalTitle">Create New Customer</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                <div class="card-body">
+                                    <div class="mb-3">
+                                        <label class="form-label">Title</label>
+                                        <select id="title" class="form-select">
+                                            <option value="">-- กรุณาเลือกคำนำหน้า --</option>
+                                            <option value="Mr.">Mr.</option>
+                                            <option value="Mrs.">Mrs.</option>
+                                            <option value="Miss">Miss</option>
+                                        </select>
+                                        <span class="text-danger"></span>
+                                    </div>
 
-    .table tr:nth-child(even) {
-        background-color: rgba(232, 255, 251, 0.5);
-    }
-</style>
+                                    <div class="mb-3">
+                                        <label class="form-label">First Name</label>
+                                        <input id="fname" class="form-control" placeholder="Enter first name" />
+                                        <span class="text-danger"></span>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label">Last Name</label>
+                                        <input id="lname" class="form-control" placeholder="Enter last name" />
+                                        <span class="text-danger"></span>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label">Phone Number</label>
+                                        <input id="phone" class="form-control" placeholder="Enter phone number" />
+                                        <span class="text-danger"></span>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Adress</label>
+                                        <input id="address" class="form-control" placeholder="Enter Adress" />
+                                        <span class="text-danger"></span>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Province</label>
+                                        <select class="form-select" id="province-dropdown">
+                                            <option value="">-- กรุณาเลือกจังหวัด --</option>
+                        @foreach (var province in ViewBag.Provinces as SelectList)
+                        {
+                                                <option asp-action="Create" value="@province.Value">@province.Text</option>
+                        }
+                                        </select>
+                                        <span class="text-danger"></span>
+                                    </div>
+
+                                    <!-- District Dropdown -->
+                                    <div class="mb-3">
+                                        <label class="form-label">District</label>
+                                        <select class="form-select" id="district-dropdown">
+                                            <option value="">-- กรุณาเลือกอำเภอ --</option>
+                        @foreach (var district in ViewBag.Districts as SelectList)
+                        {
+                                                <option value="@district.Value">@district.Text</option>
+                        }
+                                        </select>
+                                        <span class="text-danger"></span>
+                                    </div>
+
+                                    <!-- Subdistrict Dropdown -->
+                                    <div class="mb-3">
+                                        <label class="form-label">Subdistrict</label>
+                                        <select class="form-select" id="subdistrict-dropdown">
+                                            <option value="">-- กรุณาเลือกตำบล --</option>
+                        @foreach (var subdistrict in ViewBag.Subdistricts as SelectList)
+                        {
+                                                <option value="@subdistrict.Value">@subdistrict.Text</option>
+                        }
+                                        </select>
+                                        <span class="text-danger"></span>
+                                    </div>
+                                    <div class="card-body">
+
+                                        <div class="mb-3">
+                                            <h6 class="mb-0">Profile Image</h6>
+                                            <input id="image" type="file" name="file" class="form-control" />
+                                            <span class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button id="save" type="submit" class="btn btn-primary px-4">Create Customer</button>
+                                    <a asp-action="Index" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+                $(document).ready(function () {
+
+            // เมื่อ dropdown จังหวัด ถูกเปลี่ยนค่า
+            $('#province-dropdown').change(function () {
+                // รับค่าจาก option ที่ถูกเลือก
+                var selectedProvince = $(this).val();
+
+                if (selectedProvince) {
+                    // ส่งค่าไปยัง Controller เพื่อดึงข้อมูลเขต (District)
+                    $.ajax({
+                        url: '/Home/GetDistrict',  // เปลี่ยนเป็น URL ของคุณ
+                        type: 'GET',
+                        data: { provinceCode: selectedProvince },  // ส่งค่า provinceId
+                        success: function (districts) {
+                            console.log(districts);
+                            // เคลียร์ข้อมูลเดิมใน dropdown ของ District
+                            $('#district-dropdown').empty();
+                            $('#district-dropdown').append('<option value="">-- กรุณาเลือกอำเภอ --</option>');
+
+                            // เติมข้อมูลที่ได้จาก Controller ลงใน dropdown
+                            $.each(districts, function (index, district) {
+                                $('#district-dropdown').append('<option value="' + district.value + '">' + district.text + '</option>');
+                            });
+                        },
+                        error: function (xhr, status, error) {
+                            console.error('Error fetching districts: ' + error);
+                        }
+                    });
+
+                    // ส่งค่าไปยัง Controller เพื่อดึงข้อมูลตำบล (Subdistrict)
+                    $.ajax({
+                        url: '/Home/Getsubdistrict',  // เปลี่ยนเป็น URL ของคุณ
+                        type: 'GET',
+                        data: { provinceCode: selectedProvince },
+                        success: function (subdistricts) {
+                            //console.log(subdistricts);
+                            // เคลียร์ข้อมูลเดิมใน dropdown ของ Subdistrict
+                            $('#subdistrict-dropdown').empty();
+                            $('#subdistrict-dropdown').append('<option value="">-- กรุณาเลือกตำบล --</option>');
+
+                            // เติมข้อมูลที่ได้จาก Controller ลงใน dropdown
+                            $.each(subdistricts, function (index, subdistrict) {
+                                //console.log(subdistrict.Text);
+                                $('#subdistrict-dropdown').append('<option value="' + subdistrict.value + '">' + subdistrict.text + '</option>');
+                            });
+                        },
+                        error: function (xhr, status, error) {
+                            console.error('Error fetching subdistricts: ' + error);
+                        }
+                    });
+                } else {
+                    // ถ้าไม่เลือกจังหวัด ให้ล้างข้อมูลใน dropdown
+                    $('#district-dropdown').empty().append('<option value="">-- กรุณาเลือกอำเภอ --</option>');
+                    $('#subdistrict-dropdown').empty().append('<option value="">-- กรุณาเลือกตำบล --</option>');
+                }
+            });
+            $('#district-dropdown').change(function () {
+                var selectedDistrict = $(this).val();
+                if (selectedDistrict) {
+                    $.ajax({
+                        url: '/Home/Getsubdistrict',
+                        type: 'GET',
+                        data: { districtCode: selectedDistrict },
+                        success: function (subdistricts) {
+                            console.log(subdistricts);
+                            $('#subdistrict-dropdown').empty();
+                            $('#subdistrict-dropdown').append('<option value="">-- กรุณาเลือกตำบล --</option>');
+                            $.each(subdistricts, function (index, subdistrict) {
+                                $('#subdistrict-dropdown').append('<option value="' + subdistrict.value + '">' + subdistrict.text + '</option>');
+                            });
+                        },
+                        error: function (xhr, status, error) {
+                            console.error('Error fetching subdistricts: ' + error);
+                        }
+                    });
+                } else {
+                    $('#subdistrict-dropdown').empty().append('<option value="">-- กรุณาเลือกตำบล --</option>');
+                }
+            });
+            $("#save").click(function (event) {
+                event.preventDefault(); // ป้องกัน Form จากการ Submit อัตโนมัติ
+
+                var title = $("#title").val();
+                var fname = $("#fname").val();
+                var lname = $("#lname").val();
+                var phone = $("#phone").val();
+                var address = $("#address").val();
+                //ภาพไม่มา
+                var image = $('#image')[0].files; //เป็นการดึงข้อมูลรูปภาพเพื่อเตรียมเช็คไฟล์ก่อนทำงานส่วน Ajax
+                var provinceCode = $("#province-dropdown").val();
+                var districtCode = $("#district-dropdown").val();
+                var subdistrictCode = $("#subdistrict-dropdown").val();
+
+                if (!fname || !lname || !phone || !address || !provinceCode) {
+                    //alert value
+                    alert("กรุณากรอกข้อมูลให้ครบถ้วน");
+                    return;
+                }
+
+                var formData = new FormData();
+                formData.append("customerTitleName", title);
+                formData.append("customerFName", fname);
+                formData.append("customerLName", lname);
+                formData.append("customerPhone", phone);
+                formData.append("customerAddress", address);
+                formData.append("provinceCode", provinceCode);
+                formData.append("districtCode", districtCode);
+                formData.append("subdistrictCode", subdistrictCode);
+                formData.append("file", image[0]); //เพิ่มรูปภาพเข้าไปใน FormData
+
+                $.ajax({
+                    url: '@Url.Action("Create", "Home")', // ใส่ URL ของ Controller ที่จะบันทึกข้อมูล
+                    type: "POST",
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function (response) {
+                        //alert("บันทึกข้อมูลสำเร็จ");
+                        //alert id alert show
+
+                        location.reload(); // รีโหลดหน้า
+                    },
+                    error: function (xhr, status, error) {
+                        console.error("Error: " + error);
+                        alert("เกิดข้อผิดพลาดในการบันทึกข้อมูล");
+                    }
+                });
+            });
+        });
+
+    </script>
+                        }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RecordOpsApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3145207a6e30fbc55cf62192aa202fac77e951a6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c60544de53d53d38ca5fb637a3307322100e723a")]
 [assembly: System.Reflection.AssemblyProductAttribute("RecordOpsApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RecordOpsApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

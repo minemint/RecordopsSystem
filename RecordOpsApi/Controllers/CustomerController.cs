@@ -26,7 +26,7 @@ namespace RecordOpsApi.Controllers
             if (customers == null)
             {
                 responseMessage = "ไม่พบข้อมูลลูกค้า";
-                return NotFound(responseMessage);
+                return BadRequest(responseMessage);
             }
             return Ok(customers);
         }
@@ -39,8 +39,8 @@ namespace RecordOpsApi.Controllers
             var customer = await _customerRepository.GetCustomer(id);
             if (customer == null)
             {
-                responseMessage = "ไม่พบข้อมูลลูกค้า";
-                return NotFound(responseMessage);
+                responseMessage = $"ไม่พบข้อมูลลูกค้า id:  {id}";
+                return BadRequest(responseMessage);
             }
             return Ok(customer);
         }
@@ -52,7 +52,7 @@ namespace RecordOpsApi.Controllers
             var newCustomer = await _customerRepository.AddCustomer(customer);
             if (newCustomer == null)
             {
-                responseMessage = "ไม่สามารถเพิ่มข้อมูลลูกค้าได้";
+                responseMessage = "ไม่สามารถเพิ่มข้อมูลลูกค้า";
                 return BadRequest(responseMessage);
             }
             return Ok(newCustomer);
@@ -66,7 +66,7 @@ namespace RecordOpsApi.Controllers
             if(customerToUpdate == null)
             {
                 responseMessage = "ไม่พบข้อมูลลูกค้า";
-                return NotFound(responseMessage);
+                return BadRequest(responseMessage);
             }
             else
             {
@@ -86,9 +86,16 @@ namespace RecordOpsApi.Controllers
         [Route("DeleteCustomer/{id}")]
         public IActionResult DeleteCustomer(int id)
         { 
-            _customerRepository.DeleteCustomer(id);
-            responseMessage = "ลบข้อมูลลูกค้าเรียบร้อยแล้ว";
-            return Ok(responseMessage);
+            if(id == 0)
+            {
+                responseMessage = "ไม่พบข้อมูลลูกค้า";
+                return BadRequest(responseMessage);
+            }
+            else
+            {
+                _customerRepository.DeleteCustomer(id);
+                return Ok("ลบข้อมูลลูกค้าเรียบร้อยแล้ว");
+            }
         }
         [HttpGet]
         [Route("GetCustomersWithStoreP")]
@@ -98,7 +105,7 @@ namespace RecordOpsApi.Controllers
             if (customers == null)
             {
                 responseMessage = "ไม่พบข้อมูลลูกค้า";
-                return NotFound(responseMessage);
+                return BadRequest(responseMessage);
             }
             return Ok(customers);
         }
@@ -110,7 +117,7 @@ namespace RecordOpsApi.Controllers
             if (provinces == null)
             {
                 responseMessage = "ไม่พบข้อมูลจังหวัด";
-                return NotFound(responseMessage);
+                return BadRequest(responseMessage);
             }
             return Ok(provinces);
         }
@@ -122,7 +129,7 @@ namespace RecordOpsApi.Controllers
             if (districts == null)
             {
                 responseMessage = "ไม่พบข้อมูลอำเภอ";
-                return NotFound(responseMessage);
+                return BadRequest(responseMessage);
             }
             return Ok(districts);
         }
@@ -134,7 +141,7 @@ namespace RecordOpsApi.Controllers
             if (subdistricts == null)
             {
                 responseMessage = "ไม่พบข้อมูลตำบล";
-                return NotFound(responseMessage);
+                return BadRequest(responseMessage);
             }
             return Ok(subdistricts);
         }
@@ -146,7 +153,7 @@ namespace RecordOpsApi.Controllers
             if (districts == null)
             {
                 responseMessage = "ไม่พบข้อมูลจังหวัด";
-                return NotFound(responseMessage);
+                return BadRequest(responseMessage);
             }
             return Ok(districts);
 
@@ -159,7 +166,7 @@ namespace RecordOpsApi.Controllers
             if (districts == null)
             {
                 responseMessage = "ไม่พบข้อมูลแขวง";
-                return NotFound(responseMessage);
+                return BadRequest(responseMessage);
             }
             return Ok(districts);
 
@@ -172,7 +179,7 @@ namespace RecordOpsApi.Controllers
             if (subdistricts == null)
             {
                 responseMessage = "ไม่พบข้อมูลตำบล";
-                return NotFound(responseMessage);
+                return BadRequest(responseMessage);
             }
             return Ok(subdistricts);
         }
