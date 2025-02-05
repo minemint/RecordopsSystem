@@ -393,3 +393,14 @@ D:\Project\RecordopsSystem\RecordOpsApi\obj\Debug\net8.0\RecordOpsApi.genruntime
 D:\Project\RecordopsSystem\RecordOpsApi\obj\Debug\net8.0\ref\RecordOpsApi.dll
 D:\Project\RecordopsSystem\RecordOpsApi\bin\Debug\net8.0\Newtonsoft.Json.dll
 D:\Project\RecordopsSystem\RecordOpsApi\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\Project\RecordopsSystem\RecordOpsApi\bin\Debug\net8.0\DotNetEnv.dll
+D:\Project\RecordopsSystem\RecordOpsApi\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Project\RecordopsSystem\RecordOpsApi\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Project\RecordopsSystem\RecordOpsApi\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Project\RecordopsSystem\RecordOpsApi\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Project\RecordopsSystem\RecordOpsApi\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\Project\RecordopsSystem\RecordOpsApi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\Project\RecordopsSystem\RecordOpsApi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Project\RecordopsSystem\RecordOpsApi\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\Project\RecordopsSystem\RecordOpsApi\bin\Debug\net8.0\Sprache.dll
+D:\Project\RecordopsSystem\RecordOpsApi\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

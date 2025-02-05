@@ -2,7 +2,331 @@
   "Files": [
     {
       "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\RecordOps.bundle.scp.css",
-      "PackagePath": "staticwebassets\\RecordOps.u5e37k7enh.bundle.scp.css"
+      "PackagePath": "staticwebassets\\RecordOps.eaojijbmp3.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\css\\demo.css",
+      "PackagePath": "staticwebassets\\assets\\css\\demo.css"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\img\\avatars\\1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\avatars\\1.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\img\\avatars\\5.png",
+      "PackagePath": "staticwebassets\\assets\\img\\avatars\\5.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\img\\avatars\\6.png",
+      "PackagePath": "staticwebassets\\assets\\img\\avatars\\6.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\img\\avatars\\7.png",
+      "PackagePath": "staticwebassets\\assets\\img\\avatars\\7.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\img\\backgrounds\\18.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\backgrounds\\18.jpg"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\img\\elements\\1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\1.jpg"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\img\\elements\\11.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\11.jpg"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\img\\elements\\12.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\12.jpg"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\img\\elements\\13.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\13.jpg"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\img\\elements\\17.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\17.jpg"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\img\\elements\\18.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\18.jpg"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\img\\elements\\19.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\19.jpg"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\img\\elements\\2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\2.jpg"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\img\\elements\\20.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\20.jpg"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\img\\elements\\3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\3.jpg"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\img\\elements\\4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\4.jpg"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\img\\elements\\5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\5.jpg"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\img\\elements\\7.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\7.jpg"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\img\\favicon\\favicon.ico",
+      "PackagePath": "staticwebassets\\assets\\img\\favicon\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\img\\icons\\brands\\asana.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\brands\\asana.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\img\\icons\\brands\\behance.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\brands\\behance.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\img\\icons\\brands\\dribbble.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\brands\\dribbble.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\img\\icons\\brands\\facebook.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\brands\\facebook.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\img\\icons\\brands\\github.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\brands\\github.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\img\\icons\\brands\\google.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\brands\\google.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\img\\icons\\brands\\instagram.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\brands\\instagram.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\img\\icons\\brands\\mailchimp.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\brands\\mailchimp.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\img\\icons\\brands\\slack.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\brands\\slack.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\img\\icons\\brands\\twitter.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\brands\\twitter.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\img\\icons\\unicons\\cc-primary.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\unicons\\cc-primary.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\img\\icons\\unicons\\cc-success.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\unicons\\cc-success.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\img\\icons\\unicons\\cc-warning.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\unicons\\cc-warning.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\img\\icons\\unicons\\chart-success.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\unicons\\chart-success.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\img\\icons\\unicons\\chart.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\unicons\\chart.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\img\\icons\\unicons\\paypal.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\unicons\\paypal.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\img\\icons\\unicons\\wallet-info.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\unicons\\wallet-info.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\img\\icons\\unicons\\wallet.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\unicons\\wallet.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\img\\illustrations\\girl-doing-yoga-light.png",
+      "PackagePath": "staticwebassets\\assets\\img\\illustrations\\girl-doing-yoga-light.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\img\\illustrations\\man-with-laptop-light.png",
+      "PackagePath": "staticwebassets\\assets\\img\\illustrations\\man-with-laptop-light.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\img\\illustrations\\page-misc-error-light.png",
+      "PackagePath": "staticwebassets\\assets\\img\\illustrations\\page-misc-error-light.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\img\\layouts\\layout-container-light.png",
+      "PackagePath": "staticwebassets\\assets\\img\\layouts\\layout-container-light.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\img\\layouts\\layout-fluid-light.png",
+      "PackagePath": "staticwebassets\\assets\\img\\layouts\\layout-fluid-light.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\img\\layouts\\layout-without-menu-light.png",
+      "PackagePath": "staticwebassets\\assets\\img\\layouts\\layout-without-menu-light.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\img\\layouts\\layout-without-navbar-light.png",
+      "PackagePath": "staticwebassets\\assets\\img\\layouts\\layout-without-navbar-light.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\js\\config.js",
+      "PackagePath": "staticwebassets\\assets\\js\\config.js"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\js\\dashboards-analytics.js",
+      "PackagePath": "staticwebassets\\assets\\js\\dashboards-analytics.js"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\js\\extended-ui-perfect-scrollbar.js",
+      "PackagePath": "staticwebassets\\assets\\js\\extended-ui-perfect-scrollbar.js"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\js\\form-basic-inputs.js",
+      "PackagePath": "staticwebassets\\assets\\js\\form-basic-inputs.js"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\js\\home.js",
+      "PackagePath": "staticwebassets\\assets\\js\\home.js"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\js\\main.js",
+      "PackagePath": "staticwebassets\\assets\\js\\main.js"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\js\\pages-account-settings-account.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages-account-settings-account.js"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\js\\ui-modals.js",
+      "PackagePath": "staticwebassets\\assets\\js\\ui-modals.js"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\js\\ui-popover.js",
+      "PackagePath": "staticwebassets\\assets\\js\\ui-popover.js"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\js\\ui-toasts.js",
+      "PackagePath": "staticwebassets\\assets\\js\\ui-toasts.js"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\vendor\\css\\core.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\css\\core.css"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\vendor\\css\\pages\\page-account-settings.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\css\\pages\\page-account-settings.css"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\vendor\\css\\pages\\page-auth.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\css\\pages\\page-auth.css"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\vendor\\css\\pages\\page-icons.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\css\\pages\\page-icons.css"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\vendor\\css\\pages\\page-misc.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\css\\pages\\page-misc.css"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\vendor\\css\\theme-default.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\css\\theme-default.css"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\vendor\\fonts\\boxicons.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fonts\\boxicons.css"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\vendor\\fonts\\boxicons\\boxicons.eot",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fonts\\boxicons\\boxicons.eot"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\vendor\\fonts\\boxicons\\boxicons.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fonts\\boxicons\\boxicons.svg"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\vendor\\fonts\\boxicons\\boxicons.ttf",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fonts\\boxicons\\boxicons.ttf"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\vendor\\fonts\\boxicons\\boxicons.woff",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fonts\\boxicons\\boxicons.woff"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\vendor\\fonts\\boxicons\\boxicons.woff2",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fonts\\boxicons\\boxicons.woff2"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\vendor\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\vendor\\js\\helpers.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\js\\helpers.js"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\vendor\\js\\menu.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\js\\menu.js"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\vendor\\libs\\apex-charts\\apex-charts.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\libs\\apex-charts\\apex-charts.css"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\vendor\\libs\\apex-charts\\apexcharts.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\libs\\apex-charts\\apexcharts.js"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\vendor\\libs\\highlight\\highlight-github.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\libs\\highlight\\highlight-github.css"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\vendor\\libs\\highlight\\highlight.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\libs\\highlight\\highlight.css"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\vendor\\libs\\highlight\\highlight.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\libs\\highlight\\highlight.js"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\vendor\\libs\\jquery\\jquery.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\libs\\jquery\\jquery.js"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\vendor\\libs\\masonry\\masonry.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\libs\\masonry\\masonry.js"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.css"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.js"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\assets\\vendor\\libs\\popper\\popper.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\libs\\popper\\popper.js"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\css\\demo.css",
+      "PackagePath": "staticwebassets\\css\\demo.css"
     },
     {
       "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\css\\site.css",
@@ -13,8 +337,228 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\img\\avatars\\1.png",
+      "PackagePath": "staticwebassets\\img\\avatars\\1.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\img\\avatars\\5.png",
+      "PackagePath": "staticwebassets\\img\\avatars\\5.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\img\\avatars\\6.png",
+      "PackagePath": "staticwebassets\\img\\avatars\\6.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\img\\avatars\\7.png",
+      "PackagePath": "staticwebassets\\img\\avatars\\7.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\img\\backgrounds\\18.jpg",
+      "PackagePath": "staticwebassets\\img\\backgrounds\\18.jpg"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\img\\elements\\1.jpg",
+      "PackagePath": "staticwebassets\\img\\elements\\1.jpg"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\img\\elements\\11.jpg",
+      "PackagePath": "staticwebassets\\img\\elements\\11.jpg"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\img\\elements\\12.jpg",
+      "PackagePath": "staticwebassets\\img\\elements\\12.jpg"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\img\\elements\\13.jpg",
+      "PackagePath": "staticwebassets\\img\\elements\\13.jpg"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\img\\elements\\17.jpg",
+      "PackagePath": "staticwebassets\\img\\elements\\17.jpg"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\img\\elements\\18.jpg",
+      "PackagePath": "staticwebassets\\img\\elements\\18.jpg"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\img\\elements\\19.jpg",
+      "PackagePath": "staticwebassets\\img\\elements\\19.jpg"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\img\\elements\\2.jpg",
+      "PackagePath": "staticwebassets\\img\\elements\\2.jpg"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\img\\elements\\20.jpg",
+      "PackagePath": "staticwebassets\\img\\elements\\20.jpg"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\img\\elements\\3.jpg",
+      "PackagePath": "staticwebassets\\img\\elements\\3.jpg"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\img\\elements\\4.jpg",
+      "PackagePath": "staticwebassets\\img\\elements\\4.jpg"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\img\\elements\\5.jpg",
+      "PackagePath": "staticwebassets\\img\\elements\\5.jpg"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\img\\elements\\7.jpg",
+      "PackagePath": "staticwebassets\\img\\elements\\7.jpg"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\img\\favicon\\favicon.ico",
+      "PackagePath": "staticwebassets\\img\\favicon\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\img\\icons\\brands\\asana.png",
+      "PackagePath": "staticwebassets\\img\\icons\\brands\\asana.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\img\\icons\\brands\\behance.png",
+      "PackagePath": "staticwebassets\\img\\icons\\brands\\behance.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\img\\icons\\brands\\dribbble.png",
+      "PackagePath": "staticwebassets\\img\\icons\\brands\\dribbble.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\img\\icons\\brands\\facebook.png",
+      "PackagePath": "staticwebassets\\img\\icons\\brands\\facebook.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\img\\icons\\brands\\github.png",
+      "PackagePath": "staticwebassets\\img\\icons\\brands\\github.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\img\\icons\\brands\\google.png",
+      "PackagePath": "staticwebassets\\img\\icons\\brands\\google.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\img\\icons\\brands\\instagram.png",
+      "PackagePath": "staticwebassets\\img\\icons\\brands\\instagram.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\img\\icons\\brands\\linkedin.png",
+      "PackagePath": "staticwebassets\\img\\icons\\brands\\linkedin.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\img\\icons\\brands\\mailchimp.png",
+      "PackagePath": "staticwebassets\\img\\icons\\brands\\mailchimp.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\img\\icons\\brands\\slack.png",
+      "PackagePath": "staticwebassets\\img\\icons\\brands\\slack.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\img\\icons\\brands\\twitter.png",
+      "PackagePath": "staticwebassets\\img\\icons\\brands\\twitter.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\img\\icons\\unicons\\cc-primary.png",
+      "PackagePath": "staticwebassets\\img\\icons\\unicons\\cc-primary.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\img\\icons\\unicons\\cc-success.png",
+      "PackagePath": "staticwebassets\\img\\icons\\unicons\\cc-success.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\img\\icons\\unicons\\cc-warning.png",
+      "PackagePath": "staticwebassets\\img\\icons\\unicons\\cc-warning.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\img\\icons\\unicons\\chart-success.png",
+      "PackagePath": "staticwebassets\\img\\icons\\unicons\\chart-success.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\img\\icons\\unicons\\chart.png",
+      "PackagePath": "staticwebassets\\img\\icons\\unicons\\chart.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\img\\icons\\unicons\\paypal.png",
+      "PackagePath": "staticwebassets\\img\\icons\\unicons\\paypal.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\img\\icons\\unicons\\wallet-info.png",
+      "PackagePath": "staticwebassets\\img\\icons\\unicons\\wallet-info.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\img\\icons\\unicons\\wallet.png",
+      "PackagePath": "staticwebassets\\img\\icons\\unicons\\wallet.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\img\\illustrations\\girl-doing-yoga-light.png",
+      "PackagePath": "staticwebassets\\img\\illustrations\\girl-doing-yoga-light.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\img\\illustrations\\man-with-laptop.png",
+      "PackagePath": "staticwebassets\\img\\illustrations\\man-with-laptop.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\img\\illustrations\\page-misc-error-light.png",
+      "PackagePath": "staticwebassets\\img\\illustrations\\page-misc-error-light.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\img\\layouts\\layout-container-light.png",
+      "PackagePath": "staticwebassets\\img\\layouts\\layout-container-light.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\img\\layouts\\layout-fluid-light.png",
+      "PackagePath": "staticwebassets\\img\\layouts\\layout-fluid-light.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\img\\layouts\\layout-without-menu-light.png",
+      "PackagePath": "staticwebassets\\img\\layouts\\layout-without-menu-light.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\img\\layouts\\layout-without-navbar-light.png",
+      "PackagePath": "staticwebassets\\img\\layouts\\layout-without-navbar-light.png"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\js\\Home.js",
+      "PackagePath": "staticwebassets\\js\\Home.js"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\js\\config.js",
+      "PackagePath": "staticwebassets\\js\\config.js"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\js\\dashboards-analytics.js",
+      "PackagePath": "staticwebassets\\js\\dashboards-analytics.js"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\js\\extended-ui-perfect-scrollbar.js",
+      "PackagePath": "staticwebassets\\js\\extended-ui-perfect-scrollbar.js"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\js\\form-basic-inputs.js",
+      "PackagePath": "staticwebassets\\js\\form-basic-inputs.js"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\js\\pages-account-settings-account.js",
+      "PackagePath": "staticwebassets\\js\\pages-account-settings-account.js"
+    },
+    {
       "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\js\\ui-modals.js",
+      "PackagePath": "staticwebassets\\js\\ui-modals.js"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\js\\ui-popover.js",
+      "PackagePath": "staticwebassets\\js\\ui-popover.js"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\js\\ui-toasts.js",
+      "PackagePath": "staticwebassets\\js\\ui-toasts.js"
     },
     {
       "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\lib\\NewFolder\\JavaScript.js",
@@ -249,92 +793,160 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\uploads\\0cab78cc-2e4b-4491-a152-58f3c64c26c0.jpg",
-      "PackagePath": "staticwebassets\\uploads\\0cab78cc-2e4b-4491-a152-58f3c64c26c0.jpg"
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\libs\\apex-charts\\apex-charts.scss",
+      "PackagePath": "staticwebassets\\libs\\apex-charts\\apex-charts.scss"
     },
     {
-      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\uploads\\23bd7a10-3d32-4bd7-b5e6-dd298a639fbb.jpg",
-      "PackagePath": "staticwebassets\\uploads\\23bd7a10-3d32-4bd7-b5e6-dd298a639fbb.jpg"
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\libs\\apex-charts\\apexcharts.js",
+      "PackagePath": "staticwebassets\\libs\\apex-charts\\apexcharts.js"
     },
     {
-      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\uploads\\2c33f679-7775-4042-94e6-4180ba83be7c.jpg",
-      "PackagePath": "staticwebassets\\uploads\\2c33f679-7775-4042-94e6-4180ba83be7c.jpg"
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\libs\\highlight\\highlight-github.scss",
+      "PackagePath": "staticwebassets\\libs\\highlight\\highlight-github.scss"
     },
     {
-      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\uploads\\2fdedce7-c7d5-4916-8227-97a5df1df3ef.jpg",
-      "PackagePath": "staticwebassets\\uploads\\2fdedce7-c7d5-4916-8227-97a5df1df3ef.jpg"
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\libs\\highlight\\highlight.js",
+      "PackagePath": "staticwebassets\\libs\\highlight\\highlight.js"
     },
     {
-      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\uploads\\3c66f34f-28af-4e85-89bd-c2c520e8cac9.jpg",
-      "PackagePath": "staticwebassets\\uploads\\3c66f34f-28af-4e85-89bd-c2c520e8cac9.jpg"
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\libs\\highlight\\highlight.scss",
+      "PackagePath": "staticwebassets\\libs\\highlight\\highlight.scss"
     },
     {
-      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\uploads\\41339e1a-0893-43ef-8eac-4f5b9a745fc8.jpg",
-      "PackagePath": "staticwebassets\\uploads\\41339e1a-0893-43ef-8eac-4f5b9a745fc8.jpg"
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\libs\\jquery\\jquery.js",
+      "PackagePath": "staticwebassets\\libs\\jquery\\jquery.js"
     },
     {
-      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\uploads\\4717cdbb-50f9-4ae7-9f72-1aa2b7d1b783.png",
-      "PackagePath": "staticwebassets\\uploads\\4717cdbb-50f9-4ae7-9f72-1aa2b7d1b783.png"
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\libs\\masonry\\masonry.js",
+      "PackagePath": "staticwebassets\\libs\\masonry\\masonry.js"
     },
     {
-      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\uploads\\4dd11b85-fdec-4314-8885-a212af70c5ac.jpg",
-      "PackagePath": "staticwebassets\\uploads\\4dd11b85-fdec-4314-8885-a212af70c5ac.jpg"
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\libs\\perfect-scrollbar\\perfect-scrollbar.js",
+      "PackagePath": "staticwebassets\\libs\\perfect-scrollbar\\perfect-scrollbar.js"
     },
     {
-      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\uploads\\4df6239c-e8e0-4c93-889c-14587e6d629f.jpg",
-      "PackagePath": "staticwebassets\\uploads\\4df6239c-e8e0-4c93-889c-14587e6d629f.jpg"
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\libs\\perfect-scrollbar\\perfect-scrollbar.scss",
+      "PackagePath": "staticwebassets\\libs\\perfect-scrollbar\\perfect-scrollbar.scss"
     },
     {
-      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\uploads\\81f0bfe5-8ac6-4260-8fe1-dd7c720f66e3.jpg",
-      "PackagePath": "staticwebassets\\uploads\\81f0bfe5-8ac6-4260-8fe1-dd7c720f66e3.jpg"
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\libs\\popper\\popper.js",
+      "PackagePath": "staticwebassets\\libs\\popper\\popper.js"
     },
     {
-      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\uploads\\9c23b286-24a0-4786-92ec-aa58e2fa070d.jpg",
-      "PackagePath": "staticwebassets\\uploads\\9c23b286-24a0-4786-92ec-aa58e2fa070d.jpg"
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\uploads\\33896b27-a749-4de3-84d4-6a630a12607a.jpg",
+      "PackagePath": "staticwebassets\\uploads\\33896b27-a749-4de3-84d4-6a630a12607a.jpg"
     },
     {
-      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\uploads\\9cace53c-cd02-43ac-be42-090e23f85183.jpg",
-      "PackagePath": "staticwebassets\\uploads\\9cace53c-cd02-43ac-be42-090e23f85183.jpg"
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\uploads\\79ce3e52-6cdc-46b5-a27a-65afa75f00a2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\79ce3e52-6cdc-46b5-a27a-65afa75f00a2.jpg"
     },
     {
-      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\uploads\\9d8880f4-d395-40c0-a7c2-fccc40d4c886.jpg",
-      "PackagePath": "staticwebassets\\uploads\\9d8880f4-d395-40c0-a7c2-fccc40d4c886.jpg"
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\uploads\\a3928a23-21ad-4620-bee9-68277a8b397b.jpg",
+      "PackagePath": "staticwebassets\\uploads\\a3928a23-21ad-4620-bee9-68277a8b397b.jpg"
     },
     {
-      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\uploads\\be8ec9f8-eb4b-4b0e-97cf-51e20e91246c.jpg",
-      "PackagePath": "staticwebassets\\uploads\\be8ec9f8-eb4b-4b0e-97cf-51e20e91246c.jpg"
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\uploads\\a7309ae0-805f-45b6-9c89-3fbeea6e9b34.png",
+      "PackagePath": "staticwebassets\\uploads\\a7309ae0-805f-45b6-9c89-3fbeea6e9b34.png"
     },
     {
-      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\uploads\\c11a9b92-a28d-4d07-b206-a712402e0a03.png",
-      "PackagePath": "staticwebassets\\uploads\\c11a9b92-a28d-4d07-b206-a712402e0a03.png"
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\vendor\\css\\core.css",
+      "PackagePath": "staticwebassets\\vendor\\css\\core.css"
     },
     {
-      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\uploads\\ccd3adf0-6594-4ec6-8c3f-4c6eea3dc25f.jpg",
-      "PackagePath": "staticwebassets\\uploads\\ccd3adf0-6594-4ec6-8c3f-4c6eea3dc25f.jpg"
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\vendor\\css\\pages\\page-account-settings.css",
+      "PackagePath": "staticwebassets\\vendor\\css\\pages\\page-account-settings.css"
     },
     {
-      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\uploads\\d4bbe47e-0811-4a94-81c7-2229a97bf7d2.png",
-      "PackagePath": "staticwebassets\\uploads\\d4bbe47e-0811-4a94-81c7-2229a97bf7d2.png"
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\vendor\\css\\pages\\page-auth.css",
+      "PackagePath": "staticwebassets\\vendor\\css\\pages\\page-auth.css"
     },
     {
-      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\uploads\\da26d7f9-2fb6-4522-bb8a-ce75ae8fde8d.jpg",
-      "PackagePath": "staticwebassets\\uploads\\da26d7f9-2fb6-4522-bb8a-ce75ae8fde8d.jpg"
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\vendor\\css\\pages\\page-icons.css",
+      "PackagePath": "staticwebassets\\vendor\\css\\pages\\page-icons.css"
     },
     {
-      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\uploads\\de09d4c0-3065-4fd1-a67e-be9fa251eea0.jpg",
-      "PackagePath": "staticwebassets\\uploads\\de09d4c0-3065-4fd1-a67e-be9fa251eea0.jpg"
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\vendor\\css\\pages\\page-misc.css",
+      "PackagePath": "staticwebassets\\vendor\\css\\pages\\page-misc.css"
     },
     {
-      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\uploads\\e6017721-7492-4caf-ac29-b42cd62c19ff.jpg",
-      "PackagePath": "staticwebassets\\uploads\\e6017721-7492-4caf-ac29-b42cd62c19ff.jpg"
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\vendor\\css\\theme-default.css",
+      "PackagePath": "staticwebassets\\vendor\\css\\theme-default.css"
     },
     {
-      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\uploads\\ef301f75-f02f-46a1-b37b-f91c05acd208.jpg",
-      "PackagePath": "staticwebassets\\uploads\\ef301f75-f02f-46a1-b37b-f91c05acd208.jpg"
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\vendor\\fonts\\boxicons.css",
+      "PackagePath": "staticwebassets\\vendor\\fonts\\boxicons.css"
     },
     {
-      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\uploads\\fcc85994-ca6c-4412-b650-c03986e5a225.jpg",
-      "PackagePath": "staticwebassets\\uploads\\fcc85994-ca6c-4412-b650-c03986e5a225.jpg"
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\vendor\\fonts\\boxicons\\boxicons.eot",
+      "PackagePath": "staticwebassets\\vendor\\fonts\\boxicons\\boxicons.eot"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\vendor\\fonts\\boxicons\\boxicons.svg",
+      "PackagePath": "staticwebassets\\vendor\\fonts\\boxicons\\boxicons.svg"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\vendor\\fonts\\boxicons\\boxicons.ttf",
+      "PackagePath": "staticwebassets\\vendor\\fonts\\boxicons\\boxicons.ttf"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\vendor\\fonts\\boxicons\\boxicons.woff",
+      "PackagePath": "staticwebassets\\vendor\\fonts\\boxicons\\boxicons.woff"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\vendor\\fonts\\boxicons\\boxicons.woff2",
+      "PackagePath": "staticwebassets\\vendor\\fonts\\boxicons\\boxicons.woff2"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\vendor\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\vendor\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\vendor\\js\\helpers.js",
+      "PackagePath": "staticwebassets\\vendor\\js\\helpers.js"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\vendor\\js\\menu.js",
+      "PackagePath": "staticwebassets\\vendor\\js\\menu.js"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\vendor\\libs\\apex-charts\\apex-charts.css",
+      "PackagePath": "staticwebassets\\vendor\\libs\\apex-charts\\apex-charts.css"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\vendor\\libs\\apex-charts\\apexcharts.js",
+      "PackagePath": "staticwebassets\\vendor\\libs\\apex-charts\\apexcharts.js"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\vendor\\libs\\highlight\\highlight-github.css",
+      "PackagePath": "staticwebassets\\vendor\\libs\\highlight\\highlight-github.css"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\vendor\\libs\\highlight\\highlight.css",
+      "PackagePath": "staticwebassets\\vendor\\libs\\highlight\\highlight.css"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\vendor\\libs\\highlight\\highlight.js",
+      "PackagePath": "staticwebassets\\vendor\\libs\\highlight\\highlight.js"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\vendor\\libs\\jquery\\jquery.js",
+      "PackagePath": "staticwebassets\\vendor\\libs\\jquery\\jquery.js"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\vendor\\libs\\masonry\\masonry.js",
+      "PackagePath": "staticwebassets\\vendor\\libs\\masonry\\masonry.js"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.css",
+      "PackagePath": "staticwebassets\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.css"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.js",
+      "PackagePath": "staticwebassets\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.js"
+    },
+    {
+      "Id": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\vendor\\libs\\popper\\popper.js",
+      "PackagePath": "staticwebassets\\vendor\\libs\\popper\\popper.js"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.RecordOps.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

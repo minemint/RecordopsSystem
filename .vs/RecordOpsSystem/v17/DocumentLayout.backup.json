@@ -3,8 +3,32 @@
   "WorkspaceRootPath": "D:\\Project\\RecordopsSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6414C423-CE23-4285-91B9-0DC7B2CD2B6E}|RecordOpsApi\\RecordOpsApi.csproj|d:\\project\\recordopssystem\\recordopsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6414C423-CE23-4285-91B9-0DC7B2CD2B6E}|RecordOpsApi\\RecordOpsApi.csproj|solutionrelative:recordopsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E40B5F7C-703F-44FD-916F-A1C7154FC9E6}|RecordOps\\RecordOps.csproj|d:\\project\\recordopssystem\\recordops\\views\\shared\\_contentnavbarlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E40B5F7C-703F-44FD-916F-A1C7154FC9E6}|RecordOps\\RecordOps.csproj|solutionrelative:recordops\\views\\shared\\_contentnavbarlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E40B5F7C-703F-44FD-916F-A1C7154FC9E6}|RecordOps\\RecordOps.csproj|d:\\project\\recordopssystem\\recordops\\views\\shared\\_commonmasterlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E40B5F7C-703F-44FD-916F-A1C7154FC9E6}|RecordOps\\RecordOps.csproj|solutionrelative:recordops\\views\\shared\\_commonmasterlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E40B5F7C-703F-44FD-916F-A1C7154FC9E6}|RecordOps\\RecordOps.csproj|d:\\project\\recordopssystem\\recordops\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E40B5F7C-703F-44FD-916F-A1C7154FC9E6}|RecordOps\\RecordOps.csproj|solutionrelative:recordops\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E40B5F7C-703F-44FD-916F-A1C7154FC9E6}|RecordOps\\RecordOps.csproj|d:\\project\\recordopssystem\\recordops\\views\\home\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E40B5F7C-703F-44FD-916F-A1C7154FC9E6}|RecordOps\\RecordOps.csproj|solutionrelative:recordops\\views\\home\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E40B5F7C-703F-44FD-916F-A1C7154FC9E6}|RecordOps\\RecordOps.csproj|d:\\project\\recordopssystem\\recordops\\wwwroot\\js\\home.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{E40B5F7C-703F-44FD-916F-A1C7154FC9E6}|RecordOps\\RecordOps.csproj|solutionrelative:recordops\\wwwroot\\js\\home.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E40B5F7C-703F-44FD-916F-A1C7154FC9E6}|RecordOps\\RecordOps.csproj|d:\\project\\recordopssystem\\recordops\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E40B5F7C-703F-44FD-916F-A1C7154FC9E6}|RecordOps\\RecordOps.csproj|solutionrelative:recordops\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E40B5F7C-703F-44FD-916F-A1C7154FC9E6}|RecordOps\\RecordOps.csproj|d:\\project\\recordopssystem\\recordops\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E40B5F7C-703F-44FD-916F-A1C7154FC9E6}|RecordOps\\RecordOps.csproj|solutionrelative:recordops\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +43,96 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Project\\RecordopsSystem\\RecordOpsApi\\Program.cs",
-              "RelativeDocumentMoniker": "RecordOpsApi\\Program.cs",
-              "ToolTip": "D:\\Project\\RecordopsSystem\\RecordOpsApi\\Program.cs",
-              "RelativeToolTip": "RecordOpsApi\\Program.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAYwCYAAAAAAAAAAAAAAA==",
+              "Title": "_ContentNavbarLayout.cshtml",
+              "DocumentMoniker": "D:\\Project\\RecordopsSystem\\RecordOps\\Views\\Shared\\_ContentNavbarLayout.cshtml",
+              "RelativeDocumentMoniker": "RecordOps\\Views\\Shared\\_ContentNavbarLayout.cshtml",
+              "ToolTip": "D:\\Project\\RecordopsSystem\\RecordOps\\Views\\Shared\\_ContentNavbarLayout.cshtml",
+              "RelativeToolTip": "RecordOps\\Views\\Shared\\_ContentNavbarLayout.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-02T05:15:12.459Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_CommonMasterLayout.cshtml",
+              "DocumentMoniker": "D:\\Project\\RecordopsSystem\\RecordOps\\Views\\Shared\\_CommonMasterLayout.cshtml",
+              "RelativeDocumentMoniker": "RecordOps\\Views\\Shared\\_CommonMasterLayout.cshtml",
+              "ToolTip": "D:\\Project\\RecordopsSystem\\RecordOps\\Views\\Shared\\_CommonMasterLayout.cshtml",
+              "RelativeToolTip": "RecordOps\\Views\\Shared\\_CommonMasterLayout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-02T05:15:11.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Home.js",
+              "DocumentMoniker": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\js\\Home.js",
+              "RelativeDocumentMoniker": "RecordOps\\wwwroot\\js\\Home.js",
+              "ToolTip": "D:\\Project\\RecordopsSystem\\RecordOps\\wwwroot\\js\\Home.js",
+              "RelativeToolTip": "RecordOps\\wwwroot\\js\\Home.js",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAowIEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-02-02T05:14:24.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Project\\RecordopsSystem\\RecordOps\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "RecordOps\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Project\\RecordopsSystem\\RecordOps\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "RecordOps\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-02T05:05:36.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Project\\RecordopsSystem\\RecordOps\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "RecordOps\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Project\\RecordopsSystem\\RecordOps\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "RecordOps\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAYBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T06:39:54.332Z",
+              "WhenOpened": "2025-02-02T05:03:30.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Project\\RecordopsSystem\\RecordOps\\Views\\Home\\Edit.cshtml",
+              "RelativeDocumentMoniker": "RecordOps\\Views\\Home\\Edit.cshtml",
+              "ToolTip": "D:\\Project\\RecordopsSystem\\RecordOps\\Views\\Home\\Edit.cshtml",
+              "RelativeToolTip": "RecordOps\\Views\\Home\\Edit.cshtml",
+              "ViewState": "AgIAAKkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-02T05:02:58.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Project\\RecordopsSystem\\RecordOps\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "RecordOps\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Project\\RecordopsSystem\\RecordOps\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "RecordOps\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAACwBAAAAAAAAAAAowFsBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-02T05:02:56.606Z",
               "EditorCaption": ""
             }
           ]
