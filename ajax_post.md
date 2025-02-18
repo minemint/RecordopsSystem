@@ -61,3 +61,23 @@ $(document).ready(function () {
      }
  }
 ```
+
+```
+<form asp-area="User" asp-controller="Home" asp-action="Login" method="post">
+    <div>
+        <label>Email</label>
+        <input asp-for="username" />
+        <span asp-validation-for="username"></span>
+    </div>
+    <div>
+        <label>Password</label>
+        <input asp-for="password" type="password" />
+        <span asp-validation-for="password"></span>
+    </div>
+    <div>
+        <input  type="checkbox" />
+        <label>Remember Me</label>
+    </div>
+    <button type="submit">Login</button>
+</form>
+```
