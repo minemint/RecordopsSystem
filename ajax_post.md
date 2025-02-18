@@ -62,7 +62,15 @@
              var redirectUrl = user.Data.Role == "Admin"
                  ? Url.Action("Index", "Dashboard", new { area = "Admin" })
                  : Url.Action("Index", "Dashboard", new { area = "User" });
-
+                    //// ส่ง URL redirect เป็น JSON response
+                    //if (user.Data.Role == "Admin")
+                    //{
+                    //    return RedirectToAction("Index", "Dashboard", new { area = "Admin" });
+                    //}
+                    //else
+                    //{
+                    //    return RedirectToAction("Index", "Dashboard", new { area = "User" });
+                    //}
              return Json(new { success = true, redirectUrl });
          }
          else
