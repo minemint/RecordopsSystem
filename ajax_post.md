@@ -1,13 +1,28 @@
 ```
-$(document).ready(function () {
-            $('#login').click(function () {
-    var model = {
-        username: $('#username').val(),
-        password: $('#password').val()
-    };
-});
+ $(document).ready(function () {
+             $('#login').click(function () {
+     var model = {
+         username: $('#username').val(),
+         password: $('#password').val()
+     };
 
-});
+     $.ajax({
+         url: '/Home/Login',
+         type: "POST",
+         contentType: "application/json",
+         data: JSON.stringify(model), // แปลงเป็น JSON
+         success: function () {
+             console.log('success');
+             window.location.href = '/User/Dashboard';
+         },
+         error: function (xhr, status, error) {
+             console.log(xhr.responseText);
+         }
+
+     });
+ });
+
+ });
 
 
  [HttpPost]
