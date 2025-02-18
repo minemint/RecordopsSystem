@@ -1,3 +1,4 @@
+```
 $(document).ready(function () {
             $('#login').click(function () {
     var model = {
@@ -59,3 +60,4 @@ $(document).ready(function () {
          return StatusCode(500, new { success = false, message = "Internal server error.", error = ex.Message });
      }
  }
+```
