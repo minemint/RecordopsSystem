@@ -62,6 +62,7 @@ $(document).ready(function () {
  }
 ```
 
+.NET CORE
 ```
 <form asp-area="User" asp-controller="Home" asp-action="Login" method="post">
     <div>
@@ -80,4 +81,28 @@ $(document).ready(function () {
     </div>
     <button type="submit">Login</button>
 </form>
+```
+
+.NET FRAMWORK
+```
+@model YourNamespace.Models.LoginViewModel
+
+@using (Html.BeginForm("Login", "Home", FormMethod.Post, new { area = "User" }))
+{
+    <div>
+        <label>Email</label>
+        @Html.TextBoxFor(m => m.Username)
+        @Html.ValidationMessageFor(m => m.Username)
+    </div>
+    <div>
+        <label>Password</label>
+        @Html.PasswordFor(m => m.Password)
+        @Html.ValidationMessageFor(m => m.Password)
+    </div>
+    <div>
+        <input type="checkbox" />
+        <label>Remember Me</label>
+    </div>
+    <button type="submit">Login</button>
+}
 ```
